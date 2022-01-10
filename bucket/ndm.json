@@ -1,23 +1,18 @@
 {
-   "version": "1.2.0",
-   "description": "npm desktop manager\nManage npm from the couch.",
-   "homepage": "https://720kb.github.io/ndm/#win",
-   "license": "Unknown",
-   "architecture": {
-       "64bit": {
-           "url": "https://github.com/720kb/ndm/releases/download/v1.2.0/ndm-1.2.0.exe",
-           "hash": "2af8b2aaf106b0f3411f9e9594715b3a29ece444ea62a7024ac09c09ca0f475d",
-           "pre_install": [
-               "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
-           ]
-       }
-   },
-   "bin": "ndm-1.2.0.exe",
-   "shortcuts": [
-       [
-           "ndm-1.2.0.exe",
-           "ndm"
-       ]
-   ],
-   "checkver": "Latest version: v([\\d.]+)"
+  "version": "1.2.0",
+  "description": "npm desktop manager\nManage npm from the couch.",
+  "homepage": "https://720kb.github.io/ndm/#win",
+  "license": "Unknown",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/720kb/ndm/releases/download/v1.2.0/ndm-1.2.0.exe",
+      "hash": "2af8b2aaf106b0f3411f9e9594715b3a29ece444ea62a7024ac09c09ca0f475d",
+      "pre_install": [
+        "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
+      ]
+    }
+  },
+  "bin": "ndm-1.2.0.exe",
+  "shortcuts": [["ndm-1.2.0.exe", "ndm"]],
+  "checkver": "Latest version: v([\\d.]+)"
 }
