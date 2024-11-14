@@ -38,7 +38,7 @@
         "add-ons",
         "build-tools",
         "cmake",
-        "extras",
+        "$Name",
         "licenses",
         "ndk",
         "patcher",

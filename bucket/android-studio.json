@@ -7,7 +7,7 @@
         "url": "https://developer.android.com/studio/terms.html"
     },
     "installer": {
-        "script": "& \"$bucketsdir\\scoop-myapps\\scripts\\portable.ps1\" $dir $persist_dir"
+        "script": "& \"$bucketsdir\\$Name\\scripts\\portable.ps1\" $dir $persist_dir"
     },
     "suggest": {
         "Android SDK": "android-clt"

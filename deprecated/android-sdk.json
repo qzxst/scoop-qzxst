@@ -39,7 +39,7 @@
         "build-tools",
         "cmdline-tools",
         "emulator",
-        "extras",
+        "$Name",
         "licenses",
         "ndk",
         "patcher",
