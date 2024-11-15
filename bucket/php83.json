@@ -36,8 +36,8 @@
     },
     "persist": ["cli", ["php.ini-production", "cli\\php.ini"]],
     "checkver": {
-        "url": "https://windows.php.net/download/",
-        "regex": "<h3 id=\"php-8.3\".*?>.*?\\(([\\d.]+)\\)</h3>"
+        "url": "https://windows.php.net/downloads/releases/releases.json",
+        "jsonpath": "$['8.3'].version"
     },
     "autoupdate": {
         "architecture": {

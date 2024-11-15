@@ -34,16 +34,10 @@
     "env_set": {
         "PHP_INI_SCAN_DIR": "$dir\\cli;$dir\\cli\\conf.d;"
     },
-    "persist": [
-        "cli",
-        [
-            "php.ini-production",
-            "cli\\php.ini"
-        ]
-    ],
+    "persist": ["cli", ["php.ini-production", "cli\\php.ini"]],
     "checkver": {
-        "url": "https://windows.php.net/download/",
-        "regex": "<h3 id=\"php-8.2\".*?>.*?\\(([\\d.]+)\\)</h3>"
+        "url": "https://windows.php.net/downloads/releases/releases.json",
+        "jsonpath": "$['8.2'].version"
     },
     "autoupdate": {
         "architecture": {
