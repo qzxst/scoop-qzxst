@@ -30,7 +30,10 @@
         "  warn \"'Java' is required to run Android SDK Commandline tools.\"",
         "}"
     ],
-    "env_add_path": ["cmdline-tools\\latest\\bin", "platform-tools"],
+    "env_add_path": [
+        "cmdline-tools\\latest\\bin",
+        "platform-tools"
+    ],
     "env_set": {
         "ANDROID_HOME": "$dir"
     },

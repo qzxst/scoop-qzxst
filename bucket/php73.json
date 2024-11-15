@@ -30,11 +30,26 @@
         "(Get-Content \"$dir\\cli\\php.ini\") | % { $_ -replace ';\\s?(extension_dir = \"ext\")', '$1' } | Set-Content \"$dir\\cli\\php.ini\""
     ],
     "bin": [
-        ["php.exe", "php73.exe"],
-        ["php-cgi.exe", "php73-cgi.exe"],
-        ["phpdbg.exe", "php73dbg.exe"]
+        [
+            "php.exe",
+            "php73.exe"
+        ],
+        [
+            "php-cgi.exe",
+            "php73-cgi.exe"
+        ],
+        [
+            "phpdbg.exe",
+            "php73dbg.exe"
+        ]
     ],
-    "persist": ["cli", ["php.ini-production", "cli\\php.ini"]],
+    "persist": [
+        "cli",
+        [
+            "php.ini-production",
+            "cli\\php.ini"
+        ]
+    ],
     "env_set": {
         "PHP_INI_SCAN_DIR": "$dir\\cli;$dir\\cli\\conf.d;"
     }
