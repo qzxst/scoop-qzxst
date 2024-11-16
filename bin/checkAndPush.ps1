@@ -40,6 +40,10 @@ process {
         if (-not ($man.EndsWith('.json'))) {
             $man += '.json'
         }
+        if (-not (Test-Path $man)) {
+            Write-Host "Manifest not found: $man" -ForegroundColor Red
+            continue
+        }
 
         $man = Resolve-Path $man
         $folder = Split-Path $man -Parent
@@ -49,10 +53,7 @@ process {
         Write-Host "Folder: $folder" -ForegroundColor Green
         Write-Host "File: $file" -ForegroundColor Green
 
-        if (-not (Test-Path $man)) {
-            Write-Host "Manifest not found: $man" -ForegroundColor Red
-            continue
-        }
+
 
         Write-Host 'Checking' -ForegroundColor Green
 
