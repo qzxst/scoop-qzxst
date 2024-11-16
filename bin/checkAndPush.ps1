@@ -36,6 +36,7 @@ process {
         if (-not ($man.EndsWith('.json'))) {
             $man += '.json'
         }
+
         $man = Resolve-Path $man
         $folder = Split-Path $man -Parent
         $file = Split-Path $man -Leaf
@@ -72,6 +73,7 @@ process {
 
 
         $updated = @(git status -s)
+        # exit 0
 
         if (($updated -match "$noExt").Count -gt 0) {
             # TODO: Yaml

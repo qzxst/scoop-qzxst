@@ -4,6 +4,7 @@ $dir = "$PSScriptRoot/../bucket" # checks the parent dir
 # 打印$checkver和$dir
 Write-Host "checkver: $checkver"  -ForegroundColor Red
 Write-Host "dir: $dir" -ForegroundColor Red
+Write-Host "args: $args" -ForegroundColor Red
 Write-Host "& '$checkver' -dir '$dir' $($args | ForEach-Object { "$_ " })" -ForegroundColor Red
 # exit 0
 
