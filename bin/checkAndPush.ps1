@@ -25,6 +25,10 @@ begin {
     . "$PSScriptRoot\Helpers.ps1"
 
     if ($Force) { $arg = '-ForceUpdate' } else { $arg = '-Update' }
+    # 如果Manifest为空
+    if (-not $Manifest) {
+        $Manifest = @(git status -s | Select-String -Pattern '^\s*[MADRCU]\s+.*\.json$' | ForEach-Object { $_.Line -replace '^\s*[MADRCU]\s+' } | ForEach-Object { $_.Trim() })
+    }
 }
 
 process {
@@ -69,7 +73,7 @@ process {
         Write-Host "Hashes: $Hashes" -ForegroundColor Green
         Write-Host "$PSScriptRoot\$cmd.ps1 '$noExt' '$folder' $arg" -ForegroundColor Green
 
-        Invoke-Expression -Command "$PSScriptRoot\$cmd.ps1 '$noExt' '$folder' $arg"
+        Invoke-Expression -Command "$PSScriptRoot\$cmd.ps1 '$noExt' $arg"
 
 
         $updated = @(git status -s)
