@@ -1,0 +1,41 @@
+{
+    "##": "wamp",
+    "version": "3.3.5",
+    "description": "A Windows Web development environment for Apache, MySQL, PHP databases",
+    "homepage": "https://www.wampserver.com",
+    "license": {
+        "identifier": "GPL-2.0-only"
+    },
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://zenlayer.dl.sourceforge.net/project/wampserver/WampServer%203/WampServer%203.0.0/wampserver3.3.5_x64.exe#/setup.exe",
+            "hash": "sha1:6aaa944bab8c98d2fff4f1516d3e68bb44ae99d9"
+        }
+    },
+    "pre_install": "Invoke-ExternalCommand \"$dir\\setup.exe\" -RunAs -ContinueExitcodes @{1 = 'Click on the dialog box to proceed'} | Out-Null",
+    "uninstaller": {
+        "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList '--mod=uninstall' -RunAs -ContinueExitcodes @{1 = 'Click on the dialog box to proceed'} | Out-Null"
+    },
+    "installer": {
+        "script": [
+            "if (-not (Test-Path \"$dir\\wampmanager.exe\")){",
+            "    Write-Host '安装失败,请手动安装';",
+            "    exit 1",
+            "}"
+        ]
+    },
+    "notes": "The installer will ask for administrator privileges. If you want to use WampServer without administrator privileges, you can use the portable version.",
+    "shortcuts": [["wampmanager.exe", "WampServer"]],
+    "persist": ["wampmanager.conf", "wampmanager.ini"],
+    "checkver": "wampserver([\\d.]+)_x64.exe",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://zenlayer.dl.sourceforge.net/project/wampserver/WampServer%203/WampServer%203.0.0/wampserver$version_x64.exe#/setup.exe"
+            }
+        }
+    }
+}
