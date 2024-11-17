@@ -16,10 +16,21 @@
             "hash": "9706d1683845a8124c45285216df8c1a5db9ae271bef22e7a56750d1ca45b05a"
         }
     },
+    "pre_install": [
+        "if (Test-Path \"$dir\\swiftshader\\cloudmusic.exe\") {",
+        "    Get-ChildItem \"$dir\\swiftshader\" -Recurse | Where-Object { $_.Name -notlike 'api-ms-win*'} | Copy-Item -Destination \"$dir\" -Force",
+        "}",
+        "if (Test-Path \"$dir\\redist_packages\\cloudmusic.exe\") {",
+        "    Get-ChildItem \"$dir\\redist_packages\" -Recurse | Where-Object { $_.Name -notlike 'api-ms-win*'} | Copy-Item -Destination \"$dir\" -Force",
+        "}",
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force"
+    ],
     "checkver": {
         "url": "https://www.onlinedown.net/soft/584026.htm",
         "regex": "<h1 class=\"cname\">网易云音乐&nbsp;&nbsp;([\\d.]+)</h1>"
     },
+    "bin": "cloudmusic.exe",
+    "shortcuts": [["cloudmusic.exe", "网易云音乐"]],
     "autoupdate": {
         "architecture": {
             "64bit": {
