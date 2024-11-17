@@ -32,15 +32,15 @@
     "bin": [
         [
             "php.exe",
-            "php74.exe"
+            "php74"
         ],
         [
             "php-cgi.exe",
-            "php74-cgi.exe"
+            "php74-cgi"
         ],
         [
             "phpdbg.exe",
-            "php74dbg.exe"
+            "php74dbg"
         ]
     ],
     "persist": [
