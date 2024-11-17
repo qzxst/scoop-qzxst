@@ -29,15 +29,15 @@
     "bin": [
         [
             "php.exe",
-            "php81.exe"
+            "php81"
         ],
         [
             "php-cgi.exe",
-            "php81-cgi.exe"
+            "php81-cgi"
         ],
         [
             "phpdbg.exe",
-            "php81dbg.exe"
+            "php81dbg"
         ]
     ],
     "env_set": {
