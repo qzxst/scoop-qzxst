@@ -1,0 +1,30 @@
+{
+    "version": "20240203-110809-5046fc22",
+    "description": "GPU-accelerated terminal emulator",
+    "homepage": "https://github.com/wez/wezterm",
+    "license": "Apache-2.0",
+    "url": "https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-windows-20240203-110809-5046fc22.zip",
+    "hash": "57e5d03b585303d81e8b8e96d1230362852eb39aca92b3b29c7a42cfb82f9ac4",
+    "extract_dir": "WezTerm-windows-20240203-110809-5046fc22",
+    "bin": ["wezterm.exe", "wezterm-gui.exe"],
+    "shortcuts": [["wezterm-gui.exe", "Wezterm"]],
+    "checkver": {
+        "github": "https://github.com/wez/wezterm",
+        "regex": "WezTerm-windows-([\\w-]+)"
+    },
+    "post_install": [
+        "New-ItemProperty -Path HKCU:\\Software\\Classes\\Directory\\Background\\shell\\WezTerm\\command -Value '\"$dir\\wezterm-gui.exe\" \"%V\"' -Force",
+        "New-ItemProperty -Path HKCU:\\Software\\Classes\\Directory\\shell\\WezTerm\\command -Value '\"$dir\\wezterm-gui.exe\" \"%V\"' -Force"
+    ],
+    "post_uninstall": [
+        "Remove-ItemProperty -Path HKCU:\\Software\\Classes\\Directory\\Background\\shell\\WezTerm\\command -Force",
+        "Remove-ItemProperty -Path HKCU:\\Software\\Classes\\Directory\\shell\\WezTerm\\command -Force"
+    ],
+    "autoupdate": {
+        "url": "https://github.com/wez/wezterm/releases/download/$version/WezTerm-windows-$version.zip",
+        "extract_dir": "WezTerm-windows-$version",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
