@@ -6,11 +6,19 @@
     "url": "https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-windows-20240203-110809-5046fc22.zip",
     "hash": "57e5d03b585303d81e8b8e96d1230362852eb39aca92b3b29c7a42cfb82f9ac4",
     "extract_dir": "WezTerm-windows-20240203-110809-5046fc22",
-    "bin": ["wezterm.exe", "wezterm-gui.exe"],
-    "shortcuts": [["wezterm-gui.exe", "Wezterm"]],
+    "bin": [
+        "wezterm.exe",
+        "wezterm-gui.exe"
+    ],
+    "shortcuts": [
+        [
+            "wezterm-gui.exe",
+            "Wezterm"
+        ]
+    ],
     "checkver": {
-        "github": "https://github.com/wez/wezterm",
-        "regex": "WezTerm-windows-([\\w-]+)"
+        "url": "https://github.com/wez/wezterm",
+        "regex": "<span class=\"css-truncate css-truncate-target text-bold mr-2\" style=\"max-width: none;\">([\\d]+\\-[\\d]+\\-\\w+)</span>"
     },
     "post_install": [
         "New-ItemProperty -Path HKCU:\\Software\\Classes\\Directory\\Background\\shell\\WezTerm\\command -Value '\"$dir\\wezterm-gui.exe\" \"%V\"' -Force",
