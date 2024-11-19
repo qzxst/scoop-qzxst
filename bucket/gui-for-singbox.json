@@ -22,7 +22,10 @@
     },
     "shortcuts": [["GUI.for.SingBox.exe", "GUI.for.SingBox"]],
     "persist": "data",
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/GUI-for-Cores/GUI.for.SingBox/releases",
+        "regex": "/releases/tag/v([\\d.]+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
