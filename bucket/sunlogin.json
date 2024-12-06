@@ -3,7 +3,7 @@
         "This package is not in official buckets because English interface is not available",
         "The package is named 'sunlogin' (instead of 'sunflower') following official app name on App Store"
     ],
-    "version": "15.6.9.16287",
+    "version": "15.8.0.17603",
     "description": "Remote control software (Chinese: 向日葵远程控制/向日葵遠程控制)",
     "homepage": "https://sunlogin.oray.com/",
     "license": {
@@ -12,12 +12,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": " https://dw.oray.com/sunlogin/windows/SunloginClient_15.6.9.16287_x64.exe#/setup.exe",
-            "hash": "da7aaa0d9f4c53a632943632fb10d5000a73689ae44c1b21d36f07c2be870386"
+            "url": "https://dw.oray.com/sunlogin/windows/SunloginClient_15.8.0.17603_x64.exe#/setup.exe",
+            "hash": "0d7875649de17e2324c9e0127e5273fa6fcf5956c5a7af574b8b92f93876370b"
         },
         "32bit": {
-            "url": "https://dw.oray.com/sunlogin/windows/SunloginClient_15.6.9.16287.exe#/setup.exe",
-            "hash": "6eb495a65db75e759e76ef6c538e2a7a4b16def021ef623f4aecc6f55e9c025d"
+            "url": "https://dw.oray.com/sunlogin/windows/SunloginClient_15.8.0.17603.exe#/setup.exe",
+            "hash": "0d7875649de17e2324c9e0127e5273fa6fcf5956c5a7af574b8b92f93876370b"
         }
     },
     "pre_install": "Invoke-ExternalCommand \"$dir\\setup.exe\" -RunAs -ContinueExitcodes @{1 = 'Click on the dialog box to proceed'} | Out-Null",
