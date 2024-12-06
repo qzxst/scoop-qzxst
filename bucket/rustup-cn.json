@@ -46,8 +46,8 @@
         "Write-File \"$dir/.cargo/settings.toml\" -Force -Encoding utf8 -InputObject @\"[build]\\nbuild = 'msvc'\\n\""
     ],
     "checkver": {
-        "url": "https://raw.githubusercontent.com/rust-lang-nursery/rustup.rs/master/Cargo.toml",
-        "regex": "version = \"([\\d.]+)\""
+        "url": "https://github.com/rust-lang/rustup/tags",
+        "regex": "/rust-lang/rustup/releases/tag/([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
