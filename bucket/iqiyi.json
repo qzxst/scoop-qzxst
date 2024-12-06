@@ -1,19 +1,21 @@
 {
-    "version": "12.10.5.8786",
+    "version": "12.11.5.8821",
     "description": "爱奇艺，中国高品质视频娱乐服务提供者",
     "homepage": "https://www.iqiyi.com/",
     "license": "BSD-3-Clause",
-    "url": "https://mesh.if.iqiyi.com/player/Upgrade/file/12.10.5.8786/IQIYIsetup_winget.exe#/setup.exe",
-    "hash": "5166fd3d8f1645c79c0e2df8ec5c406fe9d708ab3b0f44419ab0ab7470e2b43d",
-    "shortcuts": [["IQIYIClient.exe", "爱奇艺"]],
+    "url": "https://mesh.if.iqiyi.com/player/Upgrade/file/12.11.5.8821/IQIYIsetup_winget.exe#/setup.exe",
+    "hash": "a1fe0714487300deae7582e7ba0ab1db77292802722ae70150a414357e169bf5",
+    "shortcuts": [
+        [
+            "IQIYIClient.exe",
+            "爱奇艺"
+        ]
+    ],
     "checkver": {
         "url": "https://www.iqiyi.com/appstore.html",
         "regex": "<p class=\"dlInfo\">最新版本： ([\\d.]+)</p>"
     },
-
-    "pre_install": [
-        "Invoke-ExternalCommand \"$dir\\setup.exe\" -RunAs -ContinueExitcodes @{1 = 'Click on the dialog box to proceed'} | Out-Null"
-    ],
+    "pre_install": "Invoke-ExternalCommand \"$dir\\setup.exe\" -RunAs -ContinueExitcodes @{1 = 'Click on the dialog box to proceed'} | Out-Null",
     "uninstaller": {
         "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList '--mod=uninstall' -RunAs -ContinueExitcodes @{1 = 'Click on the dialog box to proceed'} | Out-Null"
     },
