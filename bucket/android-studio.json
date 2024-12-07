@@ -7,7 +7,7 @@
         "url": "https://developer.android.com/studio/terms.html"
     },
     "installer": {
-        "script": "& \"$bucketsdir\\scoop-qzxst\\scripts\\portable.ps1\" $dir $persist_dir"
+        "script": "& \"$bucketsdir\\..\\scripts\\portable.ps1\" $dir $persist_dir"
     },
     "pre_install": "Get-ChildItem \"$persist_dir\\bin\\studio64.exe.vmoptions\" -ErrorAction SilentlyContinue | Copy-Item -Destination \"$dir\\bin\"",
     "suggest": {
