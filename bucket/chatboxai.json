@@ -1,13 +1,13 @@
 {
     "homepage": "https://chatboxai.app",
     "description": "Chatbox AI 是一款 AI 客户端应用和智能助手，支持众多先进的 AI 模型和 API，可在 Windows、MacOS、Android、iOS、Linux 和网页版上使用。",
-    "version": "0.10.2",
+    "version": "0.10.3",
     "license": {
         "identifier": "Proprietary",
         "url": "https://chatboxai.app/zh/privacy"
     },
-    "url": "https://github.com/Bin-Huang/chatbox/releases/download/v0.10.2/Chatbox.CE-0.10.2-Setup.exe#dl.7z",
-    "hash": "b04189f1caefed136020d65b4cf8a824c1587a8d12ec5de696915fa29b079cf9",
+    "url": "https://github.com/Bin-Huang/chatbox/releases/download/v0.10.3/Chatbox.CE-0.10.3-Setup.exe#dl.7z",
+    "hash": "2fb82496e9583f1a9dfef9133deaa9cbadb9ad61ce6a1f5237b1fee092a65b3d",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
         "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
