@@ -20,9 +20,20 @@
     "shortcuts": [
         [
             "Cursor.exe",
-            "Cursor"
+            "Cursor",
+            "--user-data-dir=\"$dir\\data\\user-data\"",
+            "--extensions-dir=\"$dir\\data\\extensions\""
         ]
     ],
+    "bin": [
+        [
+            "Cursor.exe",
+            "Cursor",
+            "--user-data-dir=\"$dir\\data\\user-data\"",
+            "--extensions-dir=\"$dir\\data\\extensions\""
+        ]
+    ],
+    "persist": "data",
     "checkver": {
         "url": "https://changelog.cursor.com/",
         "regex": "UPDATE \\(.*?([\\d.]+)\\)"
