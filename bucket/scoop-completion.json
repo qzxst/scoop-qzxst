@@ -37,7 +37,7 @@
         "}"
     ],
     "checkver": {
-        "url": "https://github.com/Moeologist/scoop-completion",
+        "url": "https://github.com/Moeologist/scoop-completion/tags",
         "regex": "/Moeologist/scoop-completion/releases/tag/v([\\d.]+)"
     },
     "autoupdate": {
