@@ -1,5 +1,5 @@
 {
-    "version": "3.9.12.17",
+    "version": "3.9.12",
     "description": "Free messaging and calling app by Tencent",
     "homepage": "https://pc.weixin.qq.com/",
     "license": {
@@ -29,12 +29,7 @@
             "New-ItemProperty -Path $regpath -Name \"FileSavePath\" -Value \"$persist_dir\" -Force | Out-Null"
         ]
     },
-    "shortcuts": [
-        [
-            "wechat.exe",
-            "WeChat"
-        ]
-    ],
+    "shortcuts": [["wechat.exe", "WeChat"]],
     "persist": "WeChat Files",
     "uninstaller": {
         "script": [
@@ -43,11 +38,8 @@
         ]
     },
     "checkver": {
-        "script": [
-            "$resp = Invoke-WebRequest -UseBasicParsing -Uri 'https://luban.m.qq.com/api/public/software-manager/softwareProxy' -Body 'cmdid=3318&jprxReq%5Breq%5D%5Bsoft_id_list%5D%5B%5D=11488' -Method 'POST'",
-            "Write-Output $resp.Content"
-        ],
-        "jsonpath": "$..ver_name"
+        "url": "https://pc.weixin.qq.com/?lang=zh_CN",
+        "regex": "<div class=\"download-text\">下载 ([\\d.]+)</div>"
     },
     "autoupdate": {
         "architecture": {
