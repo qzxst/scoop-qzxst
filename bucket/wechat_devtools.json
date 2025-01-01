@@ -1,19 +1,19 @@
 {
     "homepage": "https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html",
     "description": "为了帮助开发者简单和高效地开发和调试微信小程序，腾讯在原有的公众号网页调试工具的基础上，推出了全新的发者工具，集成了公众号网页调试和小程序调试两种开发模式。",
-    "version": "1.06.2412031",
+    "version": "1.06.2412040",
     "license": {
         "identifier": "EULA",
         "url": "https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=default"
     },
     "architecture": {
         "64bit": {
-            "url": "https://dldir1.qq.com/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_1.06.2412031_win32_x64.exe#/dl.7z",
-            "hash": "3072bca62b7fc2f53c7e01f8b5494b7560a88320c69eed2edd107a1e9b542644"
+            "url": "https://dldir1.qq.com/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_1.06.2412040_win32_x64.exe#/dl.7z",
+            "hash": "723dbd73f5642e184acdb003270a8eada64820a111895691cf48f391bf9e58be"
         },
         "32bit": {
-            "url": "https://dldir1.qq.com/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_1.06.2412031_win32_ia32.exe#/dl.7z",
-            "hash": "ca627bd551eee97af9caf06f58d6f3a3d1cb146d6d8c901181467e628b104e5e"
+            "url": "https://dldir1.qq.com/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_1.06.2412040_win32_ia32.exe#/dl.7z",
+            "hash": "0df836caabd1c9b8b397ba71456e0a0e379be8e6b6e7c2390ba36e9c89c02fdc"
         }
     },
     "checkver": {
