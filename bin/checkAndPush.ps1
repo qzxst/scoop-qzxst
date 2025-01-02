@@ -89,7 +89,7 @@ process {
             $status = $updated | Where-Object { $_ -match "M\s{2}.*$noExt.json" }
             if ($status -and $status.StartsWith('M  ') -and $status.EndsWith("$noExt.json")) {
 
-                $message = "$noExt`: Update to $($manifest.version)"
+                $message = "$noExt`: Updated to $($manifest.version)"
             } else {
 
                 $message = "$noExt`: Created to $($manifest.version)"
