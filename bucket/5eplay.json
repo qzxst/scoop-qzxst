@@ -17,7 +17,12 @@
         "regex": "<p class=\"version-text\">([\\d.]+)</p>"
     },
     "bin": "5EClient.exe",
-    "shortcuts": [["5EClient.exe", "5E对战平台"]],
+    "shortcuts": [
+        [
+            "5EClient.exe",
+            "5E对战平台"
+        ]
+    ],
     "autoupdate": {
         "url": "https://oss-arena.5eplay.com/client/5EClient-$version.exe#/dl.7z"
     }

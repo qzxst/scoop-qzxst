@@ -84,7 +84,16 @@ process {
             # TODO: Yaml
             # $manifest = Get-Content $man -Raw -Encoding UTF8 | ConvertFrom-Yaml -Ordered
             [psobject] $manifest = Get-Content $man -Raw -Encoding UTF8 | ConvertFrom-Json
-            $message = "$noExt`: Bumped to $($manifest.version)"
+            # 判断gitstaus 是添加还是修改
+            Write-Host "git status -s `:$updated,$noExt" -ForegroundColor Green
+            $status = $updated | Where-Object { $_ -match "M\s{2}.*$noExt.json" }
+            if ($status -and $status.StartsWith('M  ') -and $status.EndsWith("$noExt.json")) {
+
+                $message = "$noExt`: Update to $($manifest.version)"
+            } else {
+
+                $message = "$noExt`: Created to $($manifest.version)"
+            }
             # 打印manifest $message
             Write-Host "manifest: $manifest" -ForegroundColor Green
             Write-Host "message: $message" -ForegroundColor Green
