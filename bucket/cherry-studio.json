@@ -1,17 +1,17 @@
 {
     "homepage": "https://cherry-ai.com",
     "description": "支持多模型服务的 Windows/macOS GPT 客户端。",
-    "version": "0.9.1",
+    "version": "0.9.3",
     "license": "Apache-2.0",
-    "url": "https://github.com/kangfenmao/cherry-studio/releases/download/v0.9.1/Cherry-Studio-0.9.1-setup.exe#dl.7z",
-    "hash": "f7d03044f5de41c802a9d26dec8da81d6f1d9a84cd341317c5038dba12221ea0",
+    "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v0.9.3/Cherry-Studio-0.9.3-setup.exe#dl.7z",
+    "hash": "ba693fce05d9e220139d417fd0b3efe527461d16398fde39ac5263564d88114e",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
         "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
     ],
     "checkver": {
-        "github": "https://github.com/kangfenmao/cherry-studio",
-        "regex": "/kangfenmao/cherry-studio/releases/tag/v([\\d.]+)"
+        "github": "https://github.com/CherryHQ/cherry-studio",
+        "regex": "/CherryHQ/cherry-studio/releases/tag/v([\\d.]+)"
     },
     "bin": [
         "Cherry Studio.exe",
@@ -27,6 +27,6 @@
     ],
     "persist": "User Data",
     "autoupdate": {
-        "url": "https://github.com/kangfenmao/cherry-studio/releases/download/v$version/Cherry-Studio-$version-setup.exe#dl.7z"
+        "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-setup.exe#dl.7z"
     }
 }
