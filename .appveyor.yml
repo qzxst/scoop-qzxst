@@ -9,14 +9,14 @@ matrix:
 build: 'off'
 image: Visual Studio 2019
 environment:
-  SCOOP: C:\projects\scoop
-  SCOOP_HOME: C:\projects\scoop\apps\scoop\current
+  SCOOP: D:\develop\Scoop
+  SCOOP_HOME: D:\develop\Scoop\apps\scoop\current
   matrix:
     - PowerShell: 5
     - PowerShell: 7
 init:
   - ps: |
-      (Get-PSProvider 'FileSystem').Home = 'C:\projects\'
+      (Get-PSProvider 'FileSystem').Home = ' D:\develop\'
       if(!(Test-Path "$env:SCOOP_HOME")) { git clone -q --depth=1 "https://github.com/lukesampson/scoop" "$env:SCOOP_HOME" }
 for:
   - matrix:
