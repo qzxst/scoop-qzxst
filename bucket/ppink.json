@@ -1,5 +1,5 @@
 {
-    "version": "v1.9.0RC1",
+    "version": "1.9.0RC1",
     "description": "On-screen annotation software under Windows, forked from gInk",
     "homepage": "https://github.com/pubpub-zz/ppInk",
     "license": "MIT",
@@ -14,11 +14,25 @@
         "}"
     ],
     "bin": "ppInk.exe",
-    "shortcuts": [["ppInk.exe", "ppInk"]],
-    "persist": ["Snapshots", "config.ini", "hotkeys.ini", "pens.ini"],
-    "checkver": "github",
+    "shortcuts": [
+        [
+            "ppInk.exe",
+            "ppInk"
+        ]
+    ],
+    "persist": [
+        "Snapshots",
+        "config.ini",
+        "hotkeys.ini",
+        "pens.ini"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/pubpub-zz/ppInk/releases/latest",
+        "jsonpath": "$.['tag_name']",
+        "regex": "v([\\w.]+)"
+    },
     "autoupdate": {
-        "url": "https://github.com/pubpub-zz/ppInk/releases/download/$version/ppInk.zip",
+        "url": "https://github.com/pubpub-zz/ppInk/releases/download/v$version/ppInk.zip",
         "extract_dir": "ppink"
     }
 }
