@@ -16,10 +16,7 @@
     "bin": "ppInk.exe",
     "shortcuts": [["ppInk.exe", "ppInk"]],
     "persist": ["Snapshots", "config.ini", "hotkeys.ini", "pens.ini"],
-    "checkver": {
-        "url": "https://api.github.com/repos/pubpub-zz/ppInk/releases/latest",
-        "jsonpath": "$.tag_name"
-    },
+    "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/pubpub-zz/ppInk/releases/download/$version/ppInk.zip",
         "extract_dir": "ppink"
