@@ -239,7 +239,7 @@ process {
         [psobject] $manifest = Get-Content -Path $man -Raw
         # Write-Host "manifest: $manifest" -ForegroundColor Green
         $filename = [System.IO.Path]::GetFileNameWithoutExtension($file)
-        $mdDesc = "$filename.md"
+        $mdDesc = "md/$filename.md"
         # # 将json文件的内容整理为md格式
         # homepage description version url license hash
         $manifest = Filter-JsonFields -JsonData $manifest -FieldsToKeep "homepage", "description", "version", "url", "license", "hash"
