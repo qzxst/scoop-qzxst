@@ -5,9 +5,17 @@
         "url": "https://lmstudio.ai/terms",
         "identifier": "Apache-2.0"
     },
-    "version": "0.3.5",
-    "url": "https://releases.lmstudio.ai/win32/x86/0.3.5/2a/LM-Studio-0.3.5-Setup.exe#/dl.7z",
-    "hash": "6b411f61bd335c923a65ea4b8dca8b542a2ac9099e873fddabcedfe6862b72ae",
+    "version": "0.3.6",
+    "architecture": {
+        "64bit": {
+            "url": "https://installers.lmstudio.ai/win32/x64/0.3.6-6/LM-Studio-0.3.6-6-x64.exe#/dl.7z",
+            "hash": "4b1d4bb464b066e9da036498c25c323e2ef780994953a9e70f347001769f66ba"
+        },
+        "arm64": {
+            "url": "https://installers.lmstudio.ai/win32/arm64/0.3.6-6/LM-Studio-0.3.6-6-arm64.exe#/dl.7z",
+            "hash": "04c9591cd4008d9b26b2f1128a6ea24df6f016f631892b58ab2a823e8ea47bdb"
+        }
+    },
     "installer": {
         "script": [
             "$pkgfile = (Get-ChildItem \"$dir\" '*.nupkg' | Select-Object -First 1).FullName",
@@ -15,12 +23,24 @@
             "Move-Item \"$dir\\lib\\net45\\*\" \"$dir\""
         ]
     },
-    "shortcuts": [["LM Studio.exe", "LM Studio"]],
+    "shortcuts": [
+        [
+            "LM Studio.exe",
+            "LM Studio"
+        ]
+    ],
     "checkver": {
-        "url": "https://lmstudio.ai/",
-        "regex": "LM-Studio-([\\d.]+)-Setup.exe"
+        "url": "https://lmstudio.ai/beta-releases",
+        "regex": "Release Notes - LM Studio ([\\d.]+) Release Candidate (?<build>[\\d]+?)"
     },
     "autoupdate": {
-        "url": "https://releases.lmstudio.ai/win32/x86/$version/2a/LM-Studio-$version-Setup.exe#/dl.7z"
+        "architecture": {
+            "64bit": {
+                "url": "https://installers.lmstudio.ai/win32/x64/$version-$matchBuild/LM-Studio-$version-$matchBuild-x64.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://installers.lmstudio.ai/win32/arm64/$version-$matchBuild/LM-Studio-$version-$matchBuild-arm64.exe#/dl.7z"
+            }
+        }
     }
 }
