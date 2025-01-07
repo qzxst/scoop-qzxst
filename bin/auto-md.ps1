@@ -266,7 +266,6 @@ process {
         $filename = [System.IO.Path]::GetFileNameWithoutExtension($file)
         $mdDesc = "md/$filename.md"
         # # 将json文件的内容整理为md格式
-        # homepage description version url license hash
         $manifest = Filter-JsonFields -JsonData $manifest -FieldsToKeep "homepage", "description", "version", "url", "license", "hash"
 
         $mdContent = Convert-JsonToMarkdown -JsonData $manifest -Header $filename
