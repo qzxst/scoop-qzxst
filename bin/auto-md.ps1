@@ -270,15 +270,12 @@ process {
         $manifest = Filter-JsonFields -JsonData $manifest -FieldsToKeep "homepage", "description", "version", "url", "license", "hash"
 
         $mdContent = Convert-JsonToMarkdown -JsonData $manifest -Header $filename
-        # $mdContent = ConvertTo-Markdown -JsonData $manifest -Header  $filename
-        # Write-Host $mdContent -ForegroundColor Red
         # 将md内容写入md文件
         $mdContent | Out-File -FilePath $mdDesc
         #将md文件上传到github
         git add $mdDesc
         git commit --message "update $mdDesc" --only "*$file"
         git push
-        # 删除cache中的文件
         scoop cache rm $noExt
         # $mdContent | Out-File -FilePath $mdDesc -Append
     }
