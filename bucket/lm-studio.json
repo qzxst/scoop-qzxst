@@ -30,8 +30,9 @@
         ]
     ],
     "checkver": {
-        "url": "https://lmstudio.ai/beta-releases",
-        "regex": "Release Notes - LM Studio ([\\d.]+) Release Candidate (?<build>[\\d]+?)"
+        "url": "https://lmstudio.ai/download",
+        // <span style="pointer-events:none"><span>0.3.6</span> <span class="opacity-40">(build 8)</span></span>
+        "regex": "<span style=\"pointer-events:none\"><span>([\\d.]+)</span> <span class=\"opacity-40\">(?<build>[\\d]+?)</span></span>"
     },
     "autoupdate": {
         "architecture": {
