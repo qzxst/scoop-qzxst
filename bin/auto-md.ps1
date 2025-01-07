@@ -249,6 +249,10 @@ process {
         # Write-Host $mdContent -ForegroundColor Red
         # 将md内容写入md文件
         $mdContent | Out-File -FilePath $mdDesc
+        #将md文件上传到github
+        git add $mdDesc
+        git commit -m "update $mdDesc"
+        git push
         # $mdContent | Out-File -FilePath $mdDesc -Append
     }
 }
