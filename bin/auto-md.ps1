@@ -225,6 +225,14 @@ begin {
     if ($Force) { $arg = '-ForceUpdate' } else { $arg = '-Update' }
 }
 process {
+
+    # if (-not $(scoop cache show php81)) {
+    #     Write-Host $(scoop cache show) -ForegroundColor Green
+    # }
+    # Write-Host $(scoop cache show) -ForegroundColor Green
+    # 接收返回的参数 scoop cache show “lm-studio” | Out-File -FilePath "cache.txt"
+    # exit;
+
     if ($Manifest -eq "*" ) {
         # 获取bucket下的所有json
         $Manifest = Get-ChildItem -Path "bucket" -Filter "*.json" | ForEach-Object { $_.FullName }
@@ -249,6 +257,10 @@ process {
             Write-Host "Script not found: $PSScriptRoot\$cmd.ps1" -ForegroundColor Red
         }
         Invoke-Expression -Command "$PSScriptRoot\$cmd.ps1 '$noExt' $arg"
+        # 从缓存中查找如果没有下载则不更新
+        if (-not $(scoop cache show $noExt) -and $Force -eq $false) {
+            continue
+        }
         [psobject] $manifest = Get-Content -Path $man -Raw
         # Write-Host "manifest: $manifest" -ForegroundColor Green
         $filename = [System.IO.Path]::GetFileNameWithoutExtension($file)
@@ -264,8 +276,10 @@ process {
         $mdContent | Out-File -FilePath $mdDesc
         #将md文件上传到github
         git add $mdDesc
-        git commit -m "update $mdDesc"
+        git commit --message "update $mdDesc" --only "*$file"
         git push
+        # 删除cache中的文件
+        scoop cache rm $noExt
         # $mdContent | Out-File -FilePath $mdDesc -Append
     }
 }
