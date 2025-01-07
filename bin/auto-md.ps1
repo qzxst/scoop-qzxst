@@ -222,6 +222,7 @@ begin {
         exit 1
     }
     Write-Host "Begin." -ForegroundColor Green
+    if ($Force) { $arg = '-ForceUpdate' } else { $arg = '-Update' }
 }
 process {
     if ($Manifest -eq "*" ) {
@@ -236,6 +237,18 @@ process {
         Write-Host "Manifest: $man" -ForegroundColor Green
         Write-Host "Folder: $folder" -ForegroundColor Green
         Write-Host "File: $file" -ForegroundColor Green
+
+        $cmd = 'checkver'
+        # 打印noExt $cmd $arg
+        $noExt = ($file -split '\.')[0]
+        Write-Host "noExt: $noExt" -ForegroundColor Green
+        Write-Host "cmd: $cmd" -ForegroundColor Green
+        Write-Host "arg: $arg" -ForegroundColor Green
+
+        if (-not (Test-Path "$PSScriptRoot\$cmd.ps1")) {
+            Write-Host "Script not found: $PSScriptRoot\$cmd.ps1" -ForegroundColor Red
+        }
+        Invoke-Expression -Command "$PSScriptRoot\$cmd.ps1 '$noExt' $arg"
         [psobject] $manifest = Get-Content -Path $man -Raw
         # Write-Host "manifest: $manifest" -ForegroundColor Green
         $filename = [System.IO.Path]::GetFileNameWithoutExtension($file)
