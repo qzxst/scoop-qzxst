@@ -1,7 +1,7 @@
 # git
 
-- **homepage**: [https://gitforwindows.org](https://gitforwindows.org)
+- **version**: 2.47.1.windows.1
 - **license**: GPL-2.0-only
 - **description**: Distributed version control system
-- **version**: 2.47.1.windows.1
+- **homepage**: [https://gitforwindows.org](https://gitforwindows.org)
 
