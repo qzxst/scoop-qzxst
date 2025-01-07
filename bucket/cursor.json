@@ -21,16 +21,20 @@
         [
             "Cursor.exe",
             "Cursor",
-            "--user-data-dir=\"$dir\\data\\user-data\"",
-            "--extensions-dir=\"$dir\\data\\extensions\""
+            [
+                "--user-data-dir=\"$dir\\data\\user-data\"",
+                "--extensions-dir=\"$dir\\data\\extensions\""
+            ]
         ]
     ],
     "bin": [
         [
             "Cursor.exe",
             "Cursor",
-            "--user-data-dir=\"$dir\\data\\user-data\"",
-            "--extensions-dir=\"$dir\\data\\extensions\""
+            [
+                "--user-data-dir=\"$dir\\data\\user-data\"",
+                "--extensions-dir=\"$dir\\data\\extensions\""
+            ]
         ]
     ],
     "persist": "data",
