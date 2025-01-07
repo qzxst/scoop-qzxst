@@ -1,7 +1,7 @@
 # cursor
 
-- **homepage**: [https://www.cursor.com/](https://www.cursor.com/)
+- **version**: 0.44.11
 - **license**: freeware
 - **description**: An AI code editor
-- **version**: 0.44.11
+- **homepage**: [https://www.cursor.com/](https://www.cursor.com/)
 
