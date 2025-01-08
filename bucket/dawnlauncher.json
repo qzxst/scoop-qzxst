@@ -1,15 +1,18 @@
 {
-    "version": "1.4.8",
+    "version": "1.4.9",
     "description": "帮助您整理杂乱无章的桌面，分门别类管理您的桌面快捷方式，让您的桌面保持干净整洁！",
     "homepage": "https://dawnlauncher.com/",
     "license": "MIT",
-    "url": "https://github.com/fanchenio/DawnLauncher/releases/download/1.4.8/Dawn.Launcher-1.4.8.exe#/dl.7z",
-    "hash": "e931b13da2b085bf0a085be8654e8bb2727e6989b23b7280b9a806c1d6bcb36d",
+    "url": "https://github.com/fanchenio/DawnLauncher/releases/download/1.4.9/Dawn.Launcher-1.4.9.exe#/dl.7z",
+    "hash": "5b36b2b8ec20efc8d544aac8b2d77495e2e8e0851de5284f5f6cc234193a76f6",
     "bin": "Dawn Launcher.exe",
-    "pre_install": [
-        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+    "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+    "shortcuts": [
+        [
+            "Dawn Launcher.exe",
+            "Dawn Launcher"
+        ]
     ],
-    "shortcuts": [["Dawn Launcher.exe", "Dawn Launcher"]],
     "checkver": {
         "github": "https://github.com/fanchenio/DawnLauncher",
         "re": " ([\\d.]+)"
