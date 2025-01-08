@@ -24,13 +24,7 @@
             "--user-data-dir=\"$dir\\data\\user-data\" --extensions-dir=\"$dir\\data\\extensions\""
         ]
     ],
-    "bin": [
-        [
-            "Cursor.exe",
-            "Cursor",
-            "--user-data-dir=\"$dir\\data\\user-data\" --extensions-dir=\"$dir\\data\\extensions\""
-        ]
-    ],
+    "bin": "resources\\app\\bin\\cursor.cmd",
     "persist": "data",
     "checkver": {
         "url": "https://changelog.cursor.com/",
