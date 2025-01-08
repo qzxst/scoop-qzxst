@@ -1,7 +1,6 @@
 # my-win-apps
 
 #### Description
-安装属于自己的window-apps
 
 #### Software Architecture
 Software architecture description

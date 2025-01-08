@@ -1,0 +1,40 @@
+{
+    "version": "0.44.11",
+    "description": "An AI code editor",
+    "homepage": "https://www.cursor.com/",
+    "license": "freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://downloader.cursor.sh/windows/nsis/x64",
+            "hash": "54fba80fe9ef52ccfe6d89511fa4ad84be93ca8e7c9236c86516f11ad6da0a6f"
+        }
+    },
+    "installer": {
+        "script": [
+            "$file = (Get-ChildItem \"$dir\" 'x64' | Select-Object -First 1).FullName",
+            "Expand-7ZipArchive \"$file\" \"$dir\\\" -Removal",
+            "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\`$R0\",\"$dir\\`$LOCALAPPDATA\"  -Force -Recurse"
+        ]
+    },
+    "shortcuts": [
+        [
+            "Cursor.exe",
+            "Cursor",
+            "--user-data-dir=\"$dir\\data\\user-data\" --extensions-dir=\"$dir\\data\\extensions\""
+        ]
+    ],
+    "bin": "resources\\app\\bin\\cursor.cmd",
+    "persist": "data",
+    "checkver": {
+        "url": "https://changelog.cursor.com/",
+        "regex": "UPDATE \\(.*?([\\d.]+)\\)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloader.cursor.sh/windows/nsis/x64"
+            }
+        }
+    }
+}
