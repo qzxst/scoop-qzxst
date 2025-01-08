@@ -1,0 +1,30 @@
+{
+    "version": "1.0.0",
+    "description": "this is a test package",
+    "homepage": "https://github.com/",
+    "license": { "identifier": "Freeware" },
+    "notes": "# this is a test package",
+    "installer": { "script": "install.iss" },
+    "uninstaller": { "script": "uninstall.iss" },
+    "suggest": "",
+    "depends": "",
+    "architecture": {
+        "64bit": {
+            "url": "",
+            "hash": ""
+        },
+        "32bit": {
+            "url": "",
+            "hash": ""
+        }
+    },
+    "bin": "",
+    "shortcuts": [[".exe", ""]],
+    "checkver": "",
+    "autoupdate": "",
+    "extract_dir": "",
+    "pre_install": "",
+    "post_install": "",
+    "pre_uninstall": "",
+    "post_uninstall": ""
+}
