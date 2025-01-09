@@ -1,0 +1,39 @@
+{
+    "version": "1.21.0",
+    "description": "The everything app, for work.",
+    "homepage": "https://lifeat.io/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.lifeat.com/privacy"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.todesktop.com/22090851lkuesvr/LifeAt%20Setup%201.21.0%20-x64.exe#/dl.7z",
+            "hash": "sha512:f21c47d30640fc0b911e409202ce867dd5758a2fc88973b944c7e66eb8b9a61dee9fd60fce00c10be9c368272245dd14df497c9cf19c9c9789c16f4f23aa7a7f",
+            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+        }
+    },
+    "shortcuts": [
+        [
+            "LifeAt.exe",
+            "LifeAt App",
+            "--user-data-dir=\"$dir\\data\\user-data\""
+        ]
+    ],
+    "persist": "data",
+    "checkver": {
+        "url": "https://download.todesktop.com/22090851lkuesvr/latest.yml",
+        "regex": "Setup\\s+([\\d.]+)-x64.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.todesktop.com/22090851lkuesvr/LifeAt%20Setup%20$version%20-x64.exe#/dl.7z",
+                "hash": {
+                    "url": "$baseurl/latest.yml",
+                    "regex": "(?sm)x64.*?sha512:\\s+$base64"
+                }
+            }
+        }
+    }
+}
