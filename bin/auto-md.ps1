@@ -246,21 +246,21 @@ process {
         Write-Host "Folder: $folder" -ForegroundColor Green
         Write-Host "File: $file" -ForegroundColor Green
 
-        $cmd = 'checkver'
-        # 打印noExt $cmd $arg
-        $noExt = ($file -split '\.')[0]
-        Write-Host "noExt: $noExt" -ForegroundColor Green
-        Write-Host "cmd: $cmd" -ForegroundColor Green
-        Write-Host "arg: $arg" -ForegroundColor Green
+        # $cmd = 'checkver'
+        # # 打印noExt $cmd $arg
+        # $noExt = ($file -split '\.')[0]
+        # Write-Host "noExt: $noExt" -ForegroundColor Green
+        # Write-Host "cmd: $cmd" -ForegroundColor Green
+        # Write-Host "arg: $arg" -ForegroundColor Green
 
-        if (-not (Test-Path "$PSScriptRoot\$cmd.ps1")) {
-            Write-Host "Script not found: $PSScriptRoot\$cmd.ps1" -ForegroundColor Red
-        }
-        Invoke-Expression -Command "$PSScriptRoot\$cmd.ps1 '$noExt' $arg"
+        # if (-not (Test-Path "$PSScriptRoot\$cmd.ps1")) {
+        #     Write-Host "Script not found: $PSScriptRoot\$cmd.ps1" -ForegroundColor Red
+        # }
+        # Invoke-Expression -Command "$PSScriptRoot\$cmd.ps1 '$noExt' $arg"
         # 从缓存中查找如果没有下载则不更新
-        if (-not $(scoop cache show $noExt) -and $Force -eq $false) {
-            continue
-        }
+        # if (-not $(scoop cache show $noExt) -and $Force -eq $false) {
+        #     continue
+        # }
         [psobject] $manifest = Get-Content -Path $man -Raw
         # Write-Host "manifest: $manifest" -ForegroundColor Green
         $filename = [System.IO.Path]::GetFileNameWithoutExtension($file)
@@ -272,10 +272,10 @@ process {
         # 将md内容写入md文件
         $mdContent | Out-File -FilePath $mdDesc
         #将md文件上传到github
-        git add $mdDesc
-        git commit --message "update $mdDesc" --only "*$file"
-        git push
-        scoop cache rm $noExt
+        # git add $mdDesc
+        # git commit --message "update $mdDesc" --only "*$file"
+        # git push
+        # scoop cache rm $noExt
         # $mdContent | Out-File -FilePath $mdDesc -Append
     }
 }
