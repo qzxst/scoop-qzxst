@@ -3,7 +3,7 @@
         "This package is not in official buckets because English interface is not available",
         "The package is named 'sunlogin' (instead of 'sunflower') following official app name on App Store"
     ],
-    "version": "11.3991",
+    "version": "15.8.0.17603",
     "description": "Remote control software (Chinese: 向日葵远程控制/向日葵遠程控制)",
     "homepage": "https://sunlogin.oray.com/",
     "license": {
@@ -12,12 +12,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dw.oray.com/sunlogin/windows/SunloginClient_11.3991_x64.exe#/setup.exe",
-            "hash": "3277f93f4d6fef7499721e6f187600f939280f7829ac75cd0673a2cc3ce66bd1"
+            "url": "https://dw.oray.com/sunlogin/windows/SunloginClient_15.8.0.17603_x64.exe#/setup.exe",
+            "hash": "16375d52d0ab945669ce91e2b6732569180801e8f043ea31c7c8cf5223793320"
         },
         "32bit": {
-            "url": "https://dw.oray.com/sunlogin/windows/SunloginClient_11.3991.exe#/setup.exe",
-            "hash": "3277f93f4d6fef7499721e6f187600f939280f7829ac75cd0673a2cc3ce66bd1"
+            "url": "https://dw.oray.com/sunlogin/windows/SunloginClient_15.8.0.17603.exe#/setup.exe",
+            "hash": "16375d52d0ab945669ce91e2b6732569180801e8f043ea31c7c8cf5223793320"
         }
     },
     "pre_install": "Invoke-ExternalCommand \"$dir\\setup.exe\" -RunAs -ContinueExitcodes @{1 = 'Click on the dialog box to proceed'} | Out-Null",
@@ -25,8 +25,8 @@
         "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList '--mod=uninstall' -RunAs -ContinueExitcodes @{1 = 'Click on the dialog box to proceed'} | Out-Null"
     },
     "checkver": {
-        "url": "https://sunlogin.oray.com/download/update-log?type=personal&soft=SLRC_WINDOWS_X_64",
-        "regex": "<li>V15.8.0.18235<span class=\"time\">2024.12.18</span></li>"
+        "url": "https://pc.qq.com/detail/8/detail_13068.html",
+        "regex": "<div class=\"sys-info-value ellipsis\">[\\n\\s]+([\\d.]+)[\\n\\s]+</div>"
     },
     "autoupdate": {
         "architecture": {
