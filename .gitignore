@@ -1,2 +1,3 @@
 .vscode/
 *.yml
+.github/workflows/*
