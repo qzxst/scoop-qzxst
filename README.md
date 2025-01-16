@@ -1,3 +1,5 @@
+[English](README_en.md)
+[<span style="color: red;">简体中文</span>](README.md)
 ### 描述
 
 搜集整理的软件包，方便使用，有些软件尽量将缓存移动到其他位置，持续更新中...

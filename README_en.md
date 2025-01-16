@@ -1,3 +1,6 @@
+[<span style="color: red;">English</span>](README.md)
+[简体中文](README.md)
+
 ### Description
 
 A collection of software packages for easy use. Some software packages have their cache moved to other locations. Continuously updated...
