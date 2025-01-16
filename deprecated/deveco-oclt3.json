@@ -1,0 +1,44 @@
+{
+    "version": "3.1.0.501",
+    "description": "Command Line Tools for HarmonyOS",
+    "homepage": "https://developer.huawei.com/consumer/cn/deveco-studio/archive",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/b4/v3/uGlsrCX_TsC6pCUYaHGmTA/ohcommandline-tools-windows-2.0.0.2.zip?HW-CC-KV=V1&HW-CC-Date=20230621T074207Z&HW-CC-Expire=315360000&HW-CC-Sign=F29494850986FFA0DE92D63E74198A79DA2D0A0AA6F4B8ED85B057C700F8F2AD#/dl.zip",
+            "hash": "fbe79d92017d642ee91b2471b36c3e22ff3c186a0df36f3ae683129cfd445d9c",
+            "extract_dir": "ohcommandline-tools-windows-3.1.0.501",
+            "installer": {
+                "script": [
+                    "Get-ChildItem \"$dir\\deveco*.exe\" | Rename-Item -NewName \"$dir\\installer.exe\"",
+                    "Expand-7zipArchive \"$dir\\installer.exe\" \"$dir\" | Out-Null",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
+                    "Remove-Item \"$dir\\installer.exe\" | Out-Null",
+                    "\"$bucketsdir\\..\\scripts\\portable.ps1\" $dir $persist_dir"
+                ]
+            },
+            "shortcuts": [["bin\\devecostudio64.exe", "DevEco Studio"]]
+        }
+    },
+    "persist": [
+        "plugins",
+        "profile",
+        "bin\\idea.properties",
+        "bin\\devecostudio64.exe.vmoptions"
+    ],
+    "checkver": {
+        "regex": "://(?<prefix>.*?)/ohcommandline-tools-windows-(?<version>[\\d.]+).zip(?<suffix>.*?)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://$matchPrefix/ohcommandline-tools-windows-$version.zip$matchSuffix#/dl.zip",
+                "extract_dir": "ohcommandline-tools-windows-$version"
+            }
+        },
+        "hash": {
+            "url": "https://developer.huawei.com/consumer/cn/deveco-studio/archive",
+            "regex": "(?sm)ohcommandline-tools-windows-$version.zip.*?$sha256"
+        }
+    }
+}
