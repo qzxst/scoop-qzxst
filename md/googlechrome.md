@@ -1,9 +1,9 @@
 # googlechrome
 
-- **version**: 131.0.6778.205
+- **version**: 132.0.6834.84
+- **homepage**: [https://www.google.com/chrome/](https://www.google.com/chrome/)
+- **description**: Fast, secure, and free web browser, built for the modern web.
 - **license**:
   - **identifier**: Freeware
   - **url**: [https://www.google.com/chrome/privacy/eula_text.html](https://www.google.com/chrome/privacy/eula_text.html)
-- **description**: Fast, secure, and free web browser, built for the modern web.
-- **homepage**: [https://www.google.com/chrome/](https://www.google.com/chrome/)
 

@@ -1,7 +1,7 @@
 # xray
 
-- **homepage**: [https://github.com/XTLS/Xray-core](https://github.com/XTLS/Xray-core)
-- **license**: MPL-2.0
-- **description**: A platform for building proxies to bypass network restrictions
 - **version**: 24.12.31
+- **homepage**: [https://github.com/XTLS/Xray-core](https://github.com/XTLS/Xray-core)
+- **description**: A platform for building proxies to bypass network restrictions
+- **license**: MPL-2.0
 

@@ -1,7 +1,7 @@
 # windsurf
 
-- **homepage**: [https://codeium.com/windsurf](https://codeium.com/windsurf)
 - **version**: 1.1.0
+- **homepage**: [https://codeium.com/windsurf](https://codeium.com/windsurf)
 - **description**: The first agentic IDE, and then some. The Windsurf Editor is where the work of developers and AI truly flow together, allowing for a coding experience that feels like literal magic.
 - **license**:
   - **identifier**: Proprietary

@@ -1,8 +1,8 @@
 # brave
 
-- **version**: 1.73.105
-- **description**: Secure, Fast & Private Web Browser with Adblocker
+- **version**: 1.74.48
 - **homepage**: [https://brave.com](https://brave.com)
+- **description**: Secure, Fast & Private Web Browser with Adblocker
 - **license**:
   - **identifier**: Freeware,BSD-3-Clause,GPL-3.0-only,...
   - **url**: [https://github.com/brave/brave-browser/blob/master/LICENSE](https://github.com/brave/brave-browser/blob/master/LICENSE)

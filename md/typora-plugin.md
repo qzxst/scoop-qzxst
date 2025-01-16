@@ -1,11 +1,11 @@
 # typora-plugin
 
-- **description**: Typora plugin. feature enhancement tool | Typora 插件，功能增强工具
+- **homepage**: [https://github.com/obgnail/typora_plugin](https://github.com/obgnail/typora_plugin)
+- **version**: 1.12.0
+- **url**: [https://github.com/obgnail/typora_plugin/archive/1.12.0.zip](https://github.com/obgnail/typora_plugin/archive/1.12.0.zip)
+- **hash**: 5da95e0b993b3598990f38e4c5d42ecfc8cd8e1bbd19e90030371da5b2af5f59
 - **license**:
   - **identifier**: MIT license
   - **url**: [https://github.com/obgnail/typora_plugin/blob/master/LICENSE](https://github.com/obgnail/typora_plugin/blob/master/LICENSE)
-- **url**: [https://github.com/obgnail/typora_plugin/archive/1.11.34.zip](https://github.com/obgnail/typora_plugin/archive/1.11.34.zip)
-- **homepage**: [https://github.com/obgnail/typora_plugin](https://github.com/obgnail/typora_plugin)
-- **version**: 1.11.34
-- **hash**: ab583e3c8583468e3eeb5cbd5fd142d9b74ccf5536d6fb8fbe73482de4bf8fed
+- **description**: Typora plugin. feature enhancement tool | Typora 插件，功能增强工具
 
