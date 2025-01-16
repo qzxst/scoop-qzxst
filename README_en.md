@@ -1,4 +1,4 @@
-[<span style="color: red;">English</span>](README.md)
+[`English`](README_en.md)
 [简体中文](README.md)
 
 ### Description
