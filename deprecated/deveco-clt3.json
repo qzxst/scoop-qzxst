@@ -1,0 +1,25 @@
+{
+    "version": "3.1.0.501",
+    "description": "Command Line Tools for HarmonyOS",
+    "homepage": "https://developer.huawei.com/consumer/cn/deveco-studio/archive",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/0a/v3/SJ2zm8MLSeyi1lGuxAKYBA/commandline-tools-windows-2.0.0.2.zip?HW-CC-KV=V1&HW-CC-Date=20230621T074602Z&HW-CC-Expire=315360000&HW-CC-Sign=AFB2A4467A6D5A45AB18907914BC8571B481C4E2213321E6A2BAB3091019F181#/dl.zip",
+            "hash": "fbe79d92017d642ee91b2471b36c3e22ff3c186a0df36f3ae683129cfd445d9c",
+            "extract_dir": "commandline-tools-windows-3.1.0.501",
+            "shortcuts": [["bin\\devecostudio64.exe", "DevEco Studio"]]
+        }
+    },
+    "checkver": {
+        "regex": "://(?<prefix>.*?)/commandline-tools-windows-(?<version>[\\d.]+).zip(?<suffix>.*?)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://$matchPrefix/commandline-tools-windows-$version.zip$matchSuffix#/dl.zip",
+                "extract_dir": "commandline-tools-windows-$version"
+            }
+        }
+    }
+}
