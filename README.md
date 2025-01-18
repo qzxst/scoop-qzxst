@@ -27,7 +27,7 @@ scoop bucket add java
 scoop bucket add versions
 scoop bucket add apps
 scoop bucket add nonportable
-scoop bucket add scoop-bucket
+scoop bucket add scoop-qzxst https://github.com/qzxst/scoop-qzxst.git
 ...# 其他bucket
 scoop install --global <package>
 ...# 其他软件包
