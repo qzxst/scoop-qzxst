@@ -1,0 +1,56 @@
+{
+    "version": "5.0.6",
+    "description": "MAMP PRO is the commercial, professional frontend for the classic local server environment: MAMP. With MAMP PRO you can create a separate host for each of your web projects. You can install WordPress and other Extras like Joomla or Drupal with just a few clicks. This is just a small part of what you can do with MAMP PRO.",
+    "homepage": "https://www.mamp.info/en/windows/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.mamp.info/en/privacy-policy/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.mamp.info/MAMP-PRO-WINDOWS/releases/5.0.6/MAMP_MAMP_PRO_5.0.6.exe",
+            "hash": "sha512:3f92b79d877cb1dec0b8fb66261f27ce2dbee91483179282d5bbb1e39106cc5223ec9e7be819a2ed31273429c26716437eaf35077d19808bc599863eab4a92c9"
+        }
+    },
+    "bin": [
+        "bin\\apache\\bin\\httpd.exe",
+        "bin\\mysql\\bin\\mysql.exe",
+        "bin\\mysql\\bin\\mysqld.exe",
+        "bin\\perl\\bin\\perl.exe",
+        "bin\\ruby\\bin\\rubyw.exe",
+        "bin\\ruby\\bin\\ruby.exe",
+        "bin\\python\\bin\\python.exe",
+        "bin\\python\\bin\\pythonw.exe",
+        "bin\\nginx\\bin\\nginx.exe",
+        "MAMP.exe"
+    ],
+    "shortcuts": [
+        [
+            "MAMP.exe",
+            "MAMP PRO"
+        ]
+    ],
+    "persist": [
+        "conf",
+        "htdocs",
+        "db",
+        "app.config",
+        "MAMP.exe.config"
+    ],
+    "checkver": {
+        "url": "https://www.mamp.info/en/downloads/",
+        "regex": "MAMP-MAMP-PRO-([\\d.]+).exe"
+    },
+    "autoupdate": {
+        "hash": {
+            "url": "https://www.mamp.info/en/downloads/",
+            "regex": "MAMP PRO [\\d.]+ - Download hash \\(SHA512\\)', '([a-f0-9]{128})"
+        },
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.mamp.info/MAMP-PRO-WINDOWS/releases/$version/MAMP_MAMP_PRO_$version.exe"
+            }
+        }
+    },
+    "innosetup": true
+}
