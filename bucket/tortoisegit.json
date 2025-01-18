@@ -30,9 +30,9 @@
         "}",
         "$bucketdir = Find-BucketDirectory -Name $bucket",
         "$escdir = $dir -replace \"\\\\\",\"\\\\\"",
-        "(gc \"$bucketdir\\..\\scripts\\tortoisegit\\tortoisegit-install.reg.templ\") | % {$_ -replace \"%TGITHOME%\",\"$escdir\"} | out-file -enc oem \"$dir\\tortoisegit-install.reg\"",
-        "(gc \"$bucketdir\\..\\scripts\\tortoisegit\\tortoisegit-install-tools.reg.templ\") | % {$_ -replace \"%TGITHOME%\",\"$escdir\"} | out-file -enc oem \"$dir\\tortoisegit-install-tools.reg\"",
-        "cp \"$bucketdir\\..\\scripts\\tortoisegit\\tortoisegit-uninstall.reg\" \"$dir\""
+        "(gc \"$bucketdir\\scoop-qzxst\\scripts\\tortoisegit\\tortoisegit-install.reg.templ\") | % {$_ -replace \"%TGITHOME%\",\"$escdir\"} | out-file -enc oem \"$dir\\tortoisegit-install.reg\"",
+        "(gc \"$bucketdir\\scoop-qzxst\\scripts\\tortoisegit\\tortoisegit-install-tools.reg.templ\") | % {$_ -replace \"%TGITHOME%\",\"$escdir\"} | out-file -enc oem \"$dir\\tortoisegit-install-tools.reg\"",
+        "cp \"$bucketdir\\scoop-qzxst\\scripts\\tortoisegit\\tortoisegit-uninstall.reg\" \"$dir\""
     ],
     "bin": [
         "bin\\TortoiseGitUDiff.exe",
