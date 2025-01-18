@@ -5,7 +5,6 @@ if (!(Test-Path "$persist_dir\app\Fleet.cfg")) {
 
     $current = (Split-Path $dir | Join-Path -ChildPath 'current') -replace '\\', '/'
     $filePath = "$dir\app\Fleet.cfg"
-    info "filepath:$filePath"
 
     $newLines = @(
         "java-options=-Dfleet.config.path=$current/profile/config",
