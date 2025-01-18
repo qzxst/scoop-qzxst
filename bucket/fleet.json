@@ -12,7 +12,7 @@
     },
     "installer": {
         "script": [
-            "& \"$bucketsdir\\..\\scripts\\jetbrains\\fleet.ps1\" \"$dir\" \"$persist_dir\""
+            "& \"$bucketsdir\\scoop-qzxst\\scripts\\jetbrains\\fleet.ps1\" \"$dir\" \"$persist_dir\""
         ]
     },
     "bin": "Fleet.exe",
