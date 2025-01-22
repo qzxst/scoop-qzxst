@@ -1,7 +1,7 @@
 # deno-cn
 
-- **homepage**: [https://deno.land](https://deno.land)
-- **version**: 2.1.6
+- **version**: 2.1.7
 - **description**: A secure runtime for JavaScript and TypeScript
 - **license**: MIT
+- **homepage**: [https://deno.land](https://deno.land)
 

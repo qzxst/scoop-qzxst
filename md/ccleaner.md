@@ -1,9 +1,9 @@
 # ccleaner
 
+- **hash**: 0ae6007426d1741887cbf1dee471480b7b6163b1cbc1c55891e152f6150b381d
 - **description**: Number-one tool for cleaning PC
-- **license**: Freeware
-- **url**: [https://download.ccleaner.com/portable/ccsetup631.zip](https://download.ccleaner.com/portable/ccsetup631.zip)
+- **url**: [https://download.ccleaner.com/portable/ccsetup632.zip](https://download.ccleaner.com/portable/ccsetup632.zip)
+- **version**: 6.32.11432
 - **homepage**: [https://www.ccleaner.com/ccleaner](https://www.ccleaner.com/ccleaner)
-- **version**: 6.31.11415
-- **hash**: b46536583aeb52000a5caef55e6a0b0dc05bfc93841bb08d59049ad919fe7ad3
+- **license**: Freeware
 
