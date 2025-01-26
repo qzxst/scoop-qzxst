@@ -1,12 +1,12 @@
 {
-    "version": "3.0.0-rc.13",
+    "version": "3.0.0-rc.14",
     "description": "An open source cross-platform multi-functional toolbox for Steam",
     "homepage": "https://steampp.net/",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://ghp.ci/https://github.com/BeyondDimension/SteamTools/releases/download/3.0.0-rc.13/Steam++_win_x64_v3.0.0-rc.13.7z",
-            "hash": "f3609623f44e191488b1eb84045646c8f72352e345562810ae082511b0077d34"
+            "url": "https://ghp.ci/https://github.com/BeyondDimension/SteamTools/releases/download/3.0.0-rc.14/Steam++_win_x64_v3.0.0-rc.14.7z",
+            "hash": "c37e209a960acb5cf90d315a61b99363056d9f5def777d34317b2f4ec2d5f16a"
         }
     },
     "shortcuts": [
