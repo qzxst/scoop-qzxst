@@ -13,9 +13,11 @@
         }
     },
     "bin": [
-        "Arc.exe",
-        "Arc Browser",
-        "--user-data-dir=\"$dir\\User Data\""
+        [
+            "Arc.exe",
+            "Arc Browser",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
     ],
     "shortcuts": [
         [
