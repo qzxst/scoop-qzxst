@@ -15,18 +15,15 @@
     "bin": [
         [
             "Arc.exe",
-            "Arc Browser",
-            "--user-data-dir=\"$dir\\User Data\""
+            "Arc Browser"
         ]
     ],
     "shortcuts": [
         [
             "Arc.exe",
-            "Arc Browser",
-            "--user-data-dir=\"$dir\\User Data\""
+            "Arc Browser"
         ]
     ],
-    "persist": "User Data",
     "checkver": {
         "url": "https://releases.arc.net/windows/prod/Arc.appinstaller",
         "regex": "(?s)Version=\"([\\d.]+)\".*?Version=\"([\\d.]+)\".*?Version=\"([\\d.]+)\""
