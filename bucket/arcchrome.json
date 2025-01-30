@@ -43,7 +43,7 @@
             "64bit": {
                 "url": [
                     "https://releases.arc.net/windows/dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.$match3.appx#/dl-dep1.7z",
-                    "https://releases.arc.net/windows/prod/$version/Arc.x64.msix"
+                    "https://releases.arc.net/windows/prod/$version/Arc.x64.msix#/dl-dep1.7z"
                 ]
             }
         }
