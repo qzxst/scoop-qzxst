@@ -1,31 +1,17 @@
 {
-    "architecture": {
-        "64bit": {
-            "extract_dir": "{code_GetDestDir}",
-            "hash": "7d36be6c6adb9be12127fffc30372b556dc6428a207b12c8ba19e457ab64b7f0",
-            "url": "https://windsurf-stable.codeiumdata.com/win32-x64/stable/c418a14b63f051e96dafb37fe06f1fe0b10ba3c8/WindsurfSetup-x64-1.1.0.exe"
-        }
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "extract_dir": "{code_GetDestDir}",
-                "url": "https://windsurf-stable.codeiumdata.com/win32-x64/stable/$matchId/WindsurfSetup-x64-$version.exe"
-            }
-        }
-    },
-    "persist": "data",
-    "bin": "bin/windsurf.cmd",
-    "checkver": {
-        "regex": "/win32-x64/stable/(?<id>[\\w]+)/WindsurfSetup-x64-([\\d.]+).exe",
-        "url": "https://wingetgui.com/apps/Codeium-Windsurf"
-    },
+    "version": "1.1.0",
     "description": "The first agentic IDE, and then some. The Windsurf Editor is where the work of developers and AI truly flow together, allowing for a coding experience that feels like literal magic.",
     "homepage": "https://codeium.com/windsurf",
-    "innosetup": true,
     "license": {
         "identifier": "Proprietary",
         "url": "https://codeium.com/privacy-policy"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://windsurf-stable.codeiumdata.com/win32-x64/stable/c418a14b63f051e96dafb37fe06f1fe0b10ba3c8/WindsurfSetup-x64-1.1.0.exe",
+            "hash": "7d36be6c6adb9be12127fffc30372b556dc6428a207b12c8ba19e457ab64b7f0",
+            "extract_dir": "{code_GetDestDir}"
+        }
     },
     "post_install": [
         "if (!(Test-Path \"$dir\\data\\extensions\") -and (Test-Path \"$env:USERPROFILE\\.windsurf\\extensions\")) {",
@@ -40,13 +26,9 @@
         "if ((Test-Path \"$extensions_file\")) {",
         "    info 'Adjusting path in extensions file...'",
         "    (Get-Content \"$extensions_file\") -replace '(?<=windsurf-code(/|\\\\\\\\)).*?(?=(/|\\\\\\\\)data(/|\\\\\\\\)extensions)', $version | Set-Content \"$extensions_file\"",
-        "}",
-        "$windsurf_cmd = \"$dir\\bin\\windsurf.cmd\"",
-        "if (!(Select-String -Pattern '--user-data-dir' -Path $windsurf_cmd)) {",
-        "    info 'Adjusting path in windsurf.cmd...'",
-        "    (Get-Content \"$windsurf_cmd\") -replace '(?<=windsurf.exe ).*', '$0 --user-data-dir=\"$dir\\data\\user-data\" --extensions-dir=\"$dir\\data\\extensions\"' | Set-Content \"$windsurf_cmd\"",
         "}"
     ],
+    "bin": "bin/windsurf.cmd",
     "shortcuts": [
         [
             "Windsurf.exe",
@@ -54,5 +36,18 @@
             "--user-data-dir=\"$dir\\data\\user-data\" --extensions-dir=\"$dir\\data\\extensions\""
         ]
     ],
-    "version": "1.1.0"
+    "persist": "data",
+    "checkver": {
+        "url": "https://wingetgui.com/apps/Codeium-Windsurf",
+        "regex": "/win32-x64/stable/(?<id>[\\w]+)/WindsurfSetup-x64-([\\d.]+).exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://windsurf-stable.codeiumdata.com/win32-x64/stable/$matchId/WindsurfSetup-x64-$version.exe",
+                "extract_dir": "{code_GetDestDir}"
+            }
+        }
+    },
+    "innosetup": true
 }
