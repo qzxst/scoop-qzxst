@@ -1,11 +1,11 @@
 # webstorm
 
-- **hash**: fa0dcd2678d204029b7117a254d10d021caa916cbe2f11c8115a7892c96b2ee5
-- **description**: Cross-Platform IDE for JavaScript by JetBrains.
-- **url**: [https://download.jetbrains.com/webstorm/WebStorm-2024.3.2.win.zip](https://download.jetbrains.com/webstorm/WebStorm-2024.3.2.win.zip)
-- **version**: 2024.3.2-243.23654.120
+- **url**: [https://download.jetbrains.com/webstorm/WebStorm-2024.3.2.1.win.zip](https://download.jetbrains.com/webstorm/WebStorm-2024.3.2.1.win.zip)
 - **homepage**: [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/)
 - **license**:
   - **identifier**: Proprietary
   - **url**: [https://www.jetbrains.com/store/license.html](https://www.jetbrains.com/store/license.html)
+- **hash**: 76fbdbe57026eaa127cf89c6186ca58f35829cbf8d9d30ba51d2e39494adde7d
+- **description**: Cross-Platform IDE for JavaScript by JetBrains.
+- **version**: 2024.3.2.1-243.23654.157
 

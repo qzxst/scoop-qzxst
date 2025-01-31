@@ -1,9 +1,9 @@
 # clickup-app
 
-- **version**: 3.5.73
-- **description**: The everything app, for work.
+- **homepage**: [https://clickup.com/](https://clickup.com/)
 - **license**:
   - **identifier**: Proprietary
   - **url**: [https://clickup.com/terms/privacy](https://clickup.com/terms/privacy)
-- **homepage**: [https://clickup.com/](https://clickup.com/)
+- **version**: 3.5.76
+- **description**: The everything app, for work.
 
