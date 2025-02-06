@@ -28,7 +28,7 @@
     ],
     "checkver": {
         "url": "https://github.com/pubpub-zz/ppInk/tags",
-        "regex": "v([\\s.]+)"
+        "regex": "v([\\w.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/pubpub-zz/ppInk/releases/download/v$version/ppInk.zip",
