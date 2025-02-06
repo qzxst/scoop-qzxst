@@ -31,27 +31,7 @@ scoop bucket add versions
 scoop bucket add apps
 scoop bucket add nonportable
 scoop bucket add scoop-qzxst https://github.com/qzxst/scoop-qzxst.git
-...# Other buckets
+...# global software packages
 scoop install --global <package>
-...# Other software packages
-```
-
-### Contributing
-
-1. Fork this repository
-
-2. Create a new branch named Feat_xxx
-
-3. Commit your changes
-
-4. Create a Pull Request
-
-### Copyright Notice
-
-> All content in this repository is collected and organized from the internet. The copyright belongs to the original authors. If there are any copyright issues, please contact me for removal.
-> All content in this repository is for learning and communication purposes only and shall not be used for commercial purposes.
-> This repository does not involve any commercial interests. If there are any commercial uses, please contact me for removal.
-> This repository does not involve any political stance. If there are any political issues, please contact me for removal.
-> This repository does not involve any personal privacy. If there are any privacy concerns, please contact me for removal.
-> This repository does not involve any illegal or disciplinary violations. If there are any such issues, please contact me for removal.
-> This repository does not involve any infringement. If there are any infringement issues, please contact me for removal.
+...# global software packages
+``

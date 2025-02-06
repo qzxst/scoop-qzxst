@@ -28,23 +28,7 @@ scoop bucket add versions
 scoop bucket add apps
 scoop bucket add nonportable
 scoop bucket add scoop-qzxst https://github.com/qzxst/scoop-qzxst.git
-...# 其他bucket
+...# 全局安装
 scoop install --global <package>
-...# 其他软件包
+...# 全局安装
 ```
-
-### 参与贡献
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-### 版权声明
-> 本仓库所有内容均来自互联网搜集整理，版权归原作者所有，如有版权问题请联系我删除。
-> 本仓库所有内容仅供学习交流使用，不得用于商业用途。
-> 本仓库所有内容均不涉及任何商业利益，如有商业用途请联系我删除。
-> 本仓库所有内容均不涉及任何政治立场，如有政治立场请联系我删除。
-> 本仓库所有内容均不涉及任何个人隐私，如有个人隐私请联系我删除。
-> 本仓库所有内容均不涉及任何违法乱纪行为，如有违法乱纪行为请联系我删除。
-> 本仓库所有内容均不涉及任何侵权行为，如有侵权行为请联系我删除。
-
