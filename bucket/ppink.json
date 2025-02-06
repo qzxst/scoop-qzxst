@@ -26,11 +26,7 @@
         "hotkeys.ini",
         "pens.ini"
     ],
-    "checkver": {
-        "url": "https://api.github.com/repos/pubpub-zz/ppInk/releases/latest",
-        "jsonpath": "$.['tag_name']",
-        "regex": "v([\\w.]+)"
-    },
+    "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/pubpub-zz/ppInk/releases/download/v$version/ppInk.zip",
         "extract_dir": "ppink"
