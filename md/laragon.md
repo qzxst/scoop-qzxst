@@ -1,9 +1,9 @@
 # laragon
 
-- **url**: [https://github.com/leokhoa/laragon/releases/download/7.0.4/laragon-wamp.exe](https://github.com/leokhoa/laragon/releases/download/7.0.4/laragon-wamp.exe)
-- **homepage**: [https://laragon.org/](https://laragon.org/)
+- **hash**: 73541d29b9483f593c54d75f4750051626c9990bcafc2cb67ae13c1ebad7f0a7
+- **url**: [https://github.com/leokhoa/laragon/releases/download/7.0.6/laragon-wamp.exe](https://github.com/leokhoa/laragon/releases/download/7.0.6/laragon-wamp.exe)
 - **license**: MIT
-- **hash**: 5ff52ee1e02ebb0ed3d85597a90e9d00442bb5c7b518a979dffe69dbc9dce04a
 - **description**: Universal development environment for PHP, Node.js, Python, Java, Go, Ruby
-- **version**: 7.0.4
+- **homepage**: [https://laragon.org/](https://laragon.org/)
+- **version**: 7.0.6
 

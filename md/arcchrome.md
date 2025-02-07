@@ -1,9 +1,9 @@
 # arcchrome
 
-- **homepage**: [https://arc.net/downloaded](https://arc.net/downloaded)
+- **version**: 1.40.0.9854
+- **description**: A browser that doesn’t just meet your needs — it anticipates them.
 - **license**:
   - **identifier**: Proprietary
   - **url**: [https://arc.net/privacy](https://arc.net/privacy)
-- **version**: 1.38.1.8405
-- **description**: A browser that doesn’t just meet your needs — it anticipates them.
+- **homepage**: [https://arc.net/downloaded](https://arc.net/downloaded)
 
