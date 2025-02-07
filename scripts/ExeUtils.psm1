@@ -164,6 +164,6 @@ function Invoke-ExternalCommand2 {
 }
 Export-ModuleMember `
     -Function `
-    Expand-InnoArchive2,
-Invoke-ExternalCommand2
+    Expand-InnoArchive2, `
+    Invoke-ExternalCommand2
 
