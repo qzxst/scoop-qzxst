@@ -17,6 +17,7 @@
             "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\`$R0\",\"$dir\\`$LOCALAPPDATA\"  -Force -Recurse"
         ]
     },
+    "bin": "resources\\app\\bin\\cursor.cmd",
     "shortcuts": [
         [
             "Cursor.exe",
@@ -24,10 +25,9 @@
             "--user-data-dir=\"$dir\\data\\user-data\" --extensions-dir=\"$dir\\data\\extensions\""
         ]
     ],
-    "bin": "resources\\app\\bin\\cursor.cmd",
     "persist": "data",
     "checkver": {
-        "url": "https://changelog.cursor.com/",
+        "url": "https://www.cursor.com/cn/changelog",
         "regex": "UPDATE \\(.*?([\\d.]+)\\)"
     },
     "autoupdate": {
