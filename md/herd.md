@@ -1,11 +1,11 @@
 # herd
 
-- **hash**: ead6aefb96e0fbf64067626cb08f577242737baeae3e6c2bf7d0a79544153cde
-- **url**: [https://download.herdphp.com/app_versions/Herd-1.14.0-setup.exe#dl.7z](https://download.herdphp.com/app_versions/Herd-1.14.0-setup.exe#dl.7z)
+- **hash**: d65c7155d051d6929d0b98224035efd6bb277d48d0e6a290d8bf36a04d4713ab
+- **version**: 1.15.0
+- **description**: One click PHP development environment.Zero dependencies. Zero headaches.
 - **license**:
   - **identifier**: Proprietary
   - **url**: [https://herd.laravel.com/privacy](https://herd.laravel.com/privacy)
-- **description**: One click PHP development environment.Zero dependencies. Zero headaches.
+- **url**: [https://download.herdphp.com/app_versions/Herd-1.15.0-setup.exe#dl.7z](https://download.herdphp.com/app_versions/Herd-1.15.0-setup.exe#dl.7z)
 - **homepage**: [https://herd.laravel.com/windows](https://herd.laravel.com/windows)
-- **version**: 1.14.0
 

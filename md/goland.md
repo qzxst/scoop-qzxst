@@ -1,11 +1,11 @@
 # goland
 
-- **hash**: 069ff4f6adf0e815b46cdae1406647ebc0ceaf2234e257dd78765f70ed9f98c4
-- **url**: [https://download.jetbrains.com/go/goland-2024.3.2.1.win.zip](https://download.jetbrains.com/go/goland-2024.3.2.1.win.zip)
+- **hash**: d8f979f772da69d320b352781a8f8f17eede462e5cb862613f5f820ed45e7660
+- **version**: 2024.3.3-243.24978.59
+- **description**: Cross-Platform IDE for Go by JetBrains.
 - **license**:
   - **identifier**: Proprietary
   - **url**: [https://www.jetbrains.com/store/license.html](https://www.jetbrains.com/store/license.html)
-- **description**: Cross-Platform IDE for Go by JetBrains.
+- **url**: [https://download.jetbrains.com/go/goland-2024.3.3.win.zip](https://download.jetbrains.com/go/goland-2024.3.3.win.zip)
 - **homepage**: [https://www.jetbrains.com/goland/](https://www.jetbrains.com/goland/)
-- **version**: 2024.3.2.1-243.23654.166
 

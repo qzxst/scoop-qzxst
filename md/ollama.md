@@ -1,7 +1,7 @@
 # ollama
 
-- **version**: 0.5.7
-- **description**: Get up and running with large language models locally.
-- **license**: MIT
 - **homepage**: [https://ollama.com/](https://ollama.com/)
+- **description**: Get up and running with large language models locally.
+- **version**: 0.5.11
+- **license**: MIT
 

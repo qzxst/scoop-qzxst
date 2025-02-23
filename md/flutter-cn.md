@@ -1,9 +1,9 @@
 # flutter-cn
 
-- **hash**: 1141d3edb64c454273feac88f31f84945a1f3309a72c58aa9a5f2bb2b0fc8db3
-- **url**: [https://storage.flutter-io.cn/flutter_infra_release/releases/stable/windows/flutter_windows_3.27.4-stable.zip](https://storage.flutter-io.cn/flutter_infra_release/releases/stable/windows/flutter_windows_3.27.4-stable.zip)
-- **license**: BSD-3-Clause
+- **hash**: 0b0080912f856b66843a2061bc73e73ab1ea20b68f068100956da69783b4ca70
+- **version**: 3.29.0
 - **description**: Google's SDK for crafting beautiful, fast user experiences for mobile, web, and desktop
+- **license**: BSD-3-Clause
+- **url**: [https://storage.flutter-io.cn/flutter_infra_release/releases/stable/windows/flutter_windows_3.29.0-stable.zip](https://storage.flutter-io.cn/flutter_infra_release/releases/stable/windows/flutter_windows_3.29.0-stable.zip)
 - **homepage**: [https://flutter.dev](https://flutter.dev)
-- **version**: 3.27.4
 

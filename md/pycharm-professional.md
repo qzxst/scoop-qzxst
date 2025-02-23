@@ -1,11 +1,11 @@
 # pycharm-professional
 
-- **hash**: ceac3df239b80e960350b7f405be6d8aa801e8c62f13c6bad9077f2c82060253
-- **url**: [https://download.jetbrains.com/python/pycharm-professional-2024.3.2.win.zip](https://download.jetbrains.com/python/pycharm-professional-2024.3.2.win.zip)
+- **hash**: a4f0c8fe7187da32f1ddae9d0355abf0af0692ae35b48402864dbe633e762513
+- **version**: 2024.3.3-243.24978.54
+- **description**: Cross-Platform IDE for Python by JetBrains.
 - **license**:
   - **identifier**: Proprietary
   - **url**: [https://www.jetbrains.com/store/license.html](https://www.jetbrains.com/store/license.html)
-- **description**: Cross-Platform IDE for Python by JetBrains.
+- **url**: [https://download.jetbrains.com/python/pycharm-professional-2024.3.3.win.zip](https://download.jetbrains.com/python/pycharm-professional-2024.3.3.win.zip)
 - **homepage**: [https://www.jetbrains.com/pycharm/](https://www.jetbrains.com/pycharm/)
-- **version**: 2024.3.2-243.23654.177
 
