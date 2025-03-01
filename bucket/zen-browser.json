@@ -1,0 +1,61 @@
+{
+    "version": "1.8.2b",
+    "description": "🌀 Experience tranquillity while browsing the web without people tracking you!",
+    "homepage": "https://zen-browser.app/",
+    "license": "MPL-2.0",
+    "notes": [
+        "To set profile 'Scoop' as *DEFAULT*, or profiles/settings was lost after update:",
+        "  - Run 'Zen Browser Profile Manager', choose 'Scoop' then click 'Start Zen Browser'.",
+        "  - Visit 'about:profiles' page in Zen Browser to check *DEFAULT* profile.",
+        "For details: https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zen-browser/desktop/releases/download/1.8.2b/zen.installer.exe#/dl.7z",
+            "hash": "9e982fb224e815431e650dc04ec6933d2036e5ab08ea26475cf77d0df6528959"
+        },
+        "arm64": {
+            "url": "https://github.com/zen-browser/desktop/releases/download/1.8.2b/zen.installer-arm64.exe#/dl.7z",
+            "hash": "f4b457ceb7bcb9403d09fc901c5ac937a9b7d4dedeac6a17fbd48c056726cd8a"
+        }
+    },
+    "extract_dir": "core",
+    "post_install": [
+        "zen -CreateProfile \"Scoop $persist_dir\\profile\"",
+        "$Addition = \"$persist_dir\\addition\"",
+        "if (Test-Path $Addition) {",
+        "   info 'Copying additional items..'",
+        "   Copy-Item -Path $Addition\\* -Destination $dir -Force -Recurse -ErrorAction SilentlyContinue",
+        "}"
+    ],
+    "bin": "zen.exe",
+    "shortcuts": [
+        [
+            "zen.exe",
+            "Zen Browser"
+        ],
+        [
+            "zen.exe",
+            "Zen Browser Profile Manager",
+            "-P"
+        ]
+    ],
+    "persist": [
+        "distribution",
+        "profile"
+    ],
+    "checkver": {
+        "github": "https://github.com/zen-browser/desktop",
+        "regex": "/releases/tag/([\\d.]+-?b[.\\d]?)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zen-browser/desktop/releases/download/$version/zen.installer.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/zen-browser/desktop/releases/download/$version/zen.installer-arm64.exe#/dl.7z"
+            }
+        }
+    }
+}
