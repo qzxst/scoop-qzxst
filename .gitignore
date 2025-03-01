@@ -1,3 +1,4 @@
 .vscode/
 *.yml
 .github/
+test/
