@@ -43,7 +43,7 @@
         ]
     },
     "checkver": {
-        "url": "https://docs.anaconda.com/anaconda/install/",
+        "url": "https://www.anaconda.com/download/success",
         "regex": "Anaconda3-([\\d.-]+)-Windows"
     },
     "autoupdate": {
