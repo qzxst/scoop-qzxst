@@ -1,5 +1,5 @@
 {
-    "version": "1.2.4",
+    "version": "1.2.5",
     "description": "Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.",
     "homepage": "https://bun.sh/",
     "license": "MIT",
@@ -9,34 +9,15 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/oven-sh/bun/releases/download/bun-v1.2.4/bun-windows-x64.zip",
-                "https://github.com/oven-sh/bun/releases/download/bun-v1.2.4/bun-windows-x64-baseline.zip"
+                "https://github.com/oven-sh/bun/releases/download/bun-v1.2.5/bun-windows-x64.zip",
+                "https://github.com/oven-sh/bun/releases/download/bun-v1.2.5/bun-windows-x64-baseline.zip"
             ],
             "hash": [
-                "02513d08fb02d9aef71df6d6c23f04d1afa896622ed59d78781e6e839ed0e05c",
-                "49dd385e79d95d087596d3e75fc3b27086469cb2a0ca3d139121a844a9b4dc70"
+                "1c3c7da053f1ba9ecd914e0178165a510a82111f7e85c4543d5904d7c2f48a13",
+                "3724ed4365e921fb5de03de4fa5d0f414499a1470cf539eeb0dcea3638b8640e"
             ]
         }
     },
-    "env_set": {
-        "BUN_INSTALL_BIN": "$dir\\bun\\bin",
-        "BUN_INSTALL_CACHE_DIR": "$dir\\bun\\cache",
-        "BUN_INSTALL_GLOBAL_DIR": "$dir\\bun\\global"
-    },
-    "post_install": [
-        "if (!(Test-Path $HOME\\.bunfig.toml)) {",
-        "    New-Item -ItemType File -Path $HOME\\.bunfig.toml -Force",
-        "    Set-Content -Path $HOME\\.bunfig.toml -Value '[install]
-",
-        "registry = \"https://registry.npmmirror.com/\"'",
-        "} else {",
-        "    Copy-Item -Path $HOME\\.bunfig.toml -Destination $HOME\\.bunfig.toml.bak -Force",
-        "    Set-Content -Path $HOME\\.bunfig.toml -Value '[install]
-",
-        "registry = \"https://registry.npmmirror.com/\"'",
-        "}"
-    ],
-    "env_add_path": "$dir\\bun\\bin",
     "pre_install": [
         "$avx2 = Start-Job -ScriptBlock {",
         "    Add-Type -MemberDefinition '[DllImport(\"kernel32.dll\")] public static extern bool IsProcessorFeaturePresent(int ProcessorFeature);' -Name Kernel32 -Namespace Win32",
@@ -49,6 +30,23 @@
         "Move-Item \"$dir\\$target\\bun.exe\" \"$dir\\bun.exe\"",
         "Remove-Item \"$dir\\bun-windows-*\" -Recurse"
     ],
+    "post_install": [
+        "if (!(Test-Path $HOME\\.bunfig.toml)) {",
+        "    New-Item -ItemType File -Path $HOME\\.bunfig.toml -Force",
+        "    Set-Content -Path $HOME\\.bunfig.toml -Value '[install]",
+        "registry = \"https://registry.npmmirror.com/\"'",
+        "} else {",
+        "    Copy-Item -Path $HOME\\.bunfig.toml -Destination $HOME\\.bunfig.toml.bak -Force",
+        "    Set-Content -Path $HOME\\.bunfig.toml -Value '[install]",
+        "registry = \"https://registry.npmmirror.com/\"'",
+        "}"
+    ],
+    "env_add_path": "$dir\\bun\\bin",
+    "env_set": {
+        "BUN_INSTALL_BIN": "$dir\\bun\\bin",
+        "BUN_INSTALL_CACHE_DIR": "$dir\\bun\\cache",
+        "BUN_INSTALL_GLOBAL_DIR": "$dir\\bun\\global"
+    },
     "bin": [
         "bun.exe",
         [
@@ -62,6 +60,9 @@
         "re": "bun-v([\\d.]+)"
     },
     "autoupdate": {
+        "hash": {
+            "url": "$baseurl/SHASUMS256.txt"
+        },
         "architecture": {
             "64bit": {
                 "url": [
@@ -69,9 +70,6 @@
                     "https://github.com/oven-sh/bun/releases/download/bun-v$version/bun-windows-x64-baseline.zip"
                 ]
             }
-        },
-        "hash": {
-            "url": "$baseurl/SHASUMS256.txt"
         }
     }
 }
