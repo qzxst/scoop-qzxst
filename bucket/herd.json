@@ -1,13 +1,13 @@
 {
-    "homepage": "https://herd.laravel.com/windows",
+    "version": "1.17.0",
     "description": "One click PHP development environment.Zero dependencies. Zero headaches.",
-    "version": "1.16.0",
+    "homepage": "https://herd.laravel.com/windows",
     "license": {
         "identifier": "Proprietary",
         "url": "https://herd.laravel.com/privacy"
     },
-    "url": "https://download.herdphp.com/app_versions/Herd-1.16.0-setup.exe#dl.7z",
-    "hash": "2959db831593874239f80a4ca821e353075e09c5f8eae2e809125d132a6ba6f2",
+    "url": "https://download.herdphp.com/app_versions/Herd-1.17.0-setup.exe#dl.7z",
+    "hash": "fb93d3f7b7273981a8c7587a0fe561326848d937310a4c24f49c771367ee2ca9",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
         "Remove-Item \"$dir\\`$*\" -Recurse"
@@ -27,21 +27,6 @@
             "}"
         ]
     },
-    "uninstaller": {
-        "script": [
-            "$runtimeCache = \"$env:USERPROFILE\\.config\\herd\"",
-            "$runtimeCachePersist = \"$dir\\herd\"",
-            "if (!(Test-Path $runtimeCachePersist)) {",
-            "    Move-Item $runtimeCache $runtimeCachePersist -Force",
-            "} else {",
-            "    Remove-Item $runtimeCache -Force -Recurse -ErrorAction SilentlyContinue",
-            "}"
-        ]
-    },
-    "checkver": {
-        "url": "https://herd.laravel.com/changelog",
-        "regex": "<h3 class=\"pl-6 md:pl-0\">([\\d.]+)</h3>"
-    },
     "bin": "Herd.exe",
     "shortcuts": [
         [
@@ -54,6 +39,21 @@
         "data",
         "herd"
     ],
+    "uninstaller": {
+        "script": [
+            "$runtimeCache = \"$env:USERPROFILE\\.config\\herd\"",
+            "$runtimeCachePersist = \"$dir\\herd\"",
+            "if (!(Test-Path $runtimeCachePersist)) {",
+            "    Move-Item $runtimeCache $runtimeCachePersist -Force",
+            "} else {",
+            "    Remove-Item $runtimeCache -Force -Recurse -ErrorAction SilentlyContinue",
+            "}"
+        ]
+    },
+    "checkver": {
+        "url": "https://herd.laravel.com/docs/windows/changelog/index",
+        "regex": "#[\\d.]+"
+    },
     "autoupdate": {
         "url": "https://download.herdphp.com/app_versions/Herd-$version-setup.exe#dl.7z"
     }
