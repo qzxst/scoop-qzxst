@@ -1,5 +1,5 @@
 {
-    "version": "1.97.2",
+    "version": "1.98.1",
     "description": "Lightweight but powerful source code editor",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -14,12 +14,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://update.code.visualstudio.com/1.97.2/win32-x64-archive/stable#/dl.7z",
-            "hash": "b82a2280f06ff8feeed5278cb849e200c46c2ed5195c6db7e1138e36dbd4928d"
+            "url": "https://update.code.visualstudio.com/1.98.1/win32-x64-archive/stable#/dl.7z",
+            "hash": "8cd80e3f36468e887b92dc679d0c79d2e2525aeb55aa303ca24b59da19241ea3"
         },
         "arm64": {
-            "url": "https://update.code.visualstudio.com/1.97.2/win32-arm64-archive/stable#/dl.7z",
-            "hash": "52b31922b4d506380aad82eac32fe76c88d3f07c89883cf8298cc9295786571e"
+            "url": "https://update.code.visualstudio.com/1.98.1/win32-arm64-archive/stable#/dl.7z",
+            "hash": "5128b6e179394c5c860d86af751cdfc77186d0d5204c3049331a64a86fc81a26"
         }
     },
     "post_install": [
@@ -47,7 +47,7 @@
         "$extensions_file = \"$dir\\data\\extensions\\extensions.json\"",
         "if ((Test-Path \"$extensions_file\")) {",
         "    info 'Adjusting path in extensions file...'",
-        "    (Get-Content \"$extensions_file\") -replace '(?<=vscode(/|\\\\\\\\)).*?(?=(/|\\\\\\\\)data(/|\\\\\\\\)extensions)', $version | Set-Content \"$extensions_file\"",
+        "    (Get-Content \"$extensions_file\") -replace '(?<=visualstudio-code(/|\\\\\\\\)).*?(?=(/|\\\\\\\\)data(/|\\\\\\\\)extensions)', $version | Set-Content \"$extensions_file\"",
         "}"
     ],
     "env_add_path": "bin",
