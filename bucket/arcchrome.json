@@ -1,5 +1,5 @@
 {
-    "version": "1.46.0.19807",
+    "version": "1.48.0.23494",
     "description": "A browser that doesn’t just meet your needs — it anticipates them.",
     "homepage": "https://arc.net/downloaded",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://releases.arc.net/windows/prod/1.46.0.19807/Arc.x64.msix#/dl.7z",
-            "hash": "56f11cf0f2e996a8e966d2a24a242eb13c86f68f8152cbbfcb7f7dbee7b10556"
+            "url": "https://releases.arc.net/windows/prod/1.48.0.23494/Arc.x64.msix#/dl.7z",
+            "hash": "de32d122dc862c6f678f3022fe377992ecd4108941d365b5cc39d47d84162124"
         }
     },
     "bin": [
