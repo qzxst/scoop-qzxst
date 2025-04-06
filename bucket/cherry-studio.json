@@ -1,10 +1,10 @@
 {
     "homepage": "https://cherry-ai.com",
     "description": "支持多模型服务的 Windows/macOS GPT 客户端。",
-    "version": "1.1.17",
+    "version": "1.1.18",
     "license": "Apache-2.0",
-    "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.17/Cherry-Studio-1.1.17-setup.exe#dl.7z",
-    "hash": "bee56282fe65818721ce73e37ee2d7934976e9fd5ac96746a74de388734ef85f",
+    "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.18/Cherry-Studio-1.1.18-setup.exe#dl.7z",
+    "hash": "f6851d4d69840587f59ba4a78c0dd126c6867686050e165e13363b1bd27d6526",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
         "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
