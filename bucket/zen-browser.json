@@ -1,5 +1,5 @@
 {
-    "version": "1.12b",
+    "version": "1.12.3b",
     "description": "🌀 Experience tranquillity while browsing the web without people tracking you!",
     "homepage": "https://zen-browser.app/",
     "license": "MPL-2.0",
@@ -11,12 +11,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zen-browser/desktop/releases/download/1.12b/zen.installer.exe#/dl.7z",
-            "hash": "7f8a0680f1a1ac9e9ab59084f2bc0cef1206b2f70879adfe621c0e1a11f86820"
+            "url": "https://github.com/zen-browser/desktop/releases/download/1.12.3b/zen.installer.exe#/dl.7z",
+            "hash": "db6ce8318713d04a3bafc7d038c37f09933d818e31d2a148add60e35ffc8e369"
         },
         "arm64": {
-            "url": "https://github.com/zen-browser/desktop/releases/download/1.12b/zen.installer-arm64.exe#/dl.7z",
-            "hash": "2e5aea00a9dafae1f68dc48531dc54eb198a3816861f4daddacb2b78abd27479"
+            "url": "https://github.com/zen-browser/desktop/releases/download/1.12.3b/zen.installer-arm64.exe#/dl.7z",
+            "hash": "bc1a3189372a561c6379e29e38771c4ae00580a3616b32b2b593ea54687a55d6"
         }
     },
     "extract_dir": "core",
