@@ -1,16 +1,16 @@
 {
-    "version": "0.9.0",
+    "version": "0.10.1",
     "description": "Distributed, offline-first bug tracker embedded in git, with bridges",
     "homepage": "https://github.com/git-bug/git-bug",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/git-bug/git-bug/releases/download/v0.9.0/git-bug_windows_amd64.exe#/git-bug.exe",
-            "hash": "4e93792b2ef48cb1cf059bae3b7caa5a43a743875145623be77af318549a37af"
+            "url": "https://github.com/git-bug/git-bug/releases/download/v0.10.1/git-bug_windows_amd64.exe#/git-bug.exe",
+            "hash": "3f28cea2997388c4b77bc540f53f0f71c023ed5c254a9c602d6cc6d01d21fb93"
         },
         "32bit": {
-            "url": "https://github.com/git-bug/git-bug/releases/download/v0.9.0/git-bug_windows_386.exe#/git-bug.exe",
-            "hash": "22e5a89667b4604628247fed8b4cc46f621a45a41aa4234245303a2f92836f27"
+            "url": "https://github.com/git-bug/git-bug/releases/download/v0.10.1/git-bug_windows_386.exe#/git-bug.exe",
+            "hash": "4be7c6c7675fa468bb42f6a21dba9c049228d8cd6c31b9052f35e2285c045f04"
         }
     },
     "bin": "git-bug.exe",
