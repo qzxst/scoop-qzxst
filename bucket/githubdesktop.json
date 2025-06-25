@@ -1,16 +1,16 @@
 {
-    "version": "3.4.20",
+    "version": "3.5.0",
     "description": "GitHub Desktop. Extend your GitHub workflow beyond your browser.",
     "homepage": "https://desktop.github.com/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/desktop/desktop/releases/download/release-3.4.20/GitHubDesktop-3.4.20-x64-full.nupkg",
-            "hash": "80c89734717291ff0f9913f5016724416f632e707ed2e40bbede2062d38984bb"
+            "url": "https://github.com/desktop/desktop/releases/download/release-3.5.0/GitHubDesktop-3.5.0-x64-full.nupkg",
+            "hash": "9fd066d3c2a76a759a0a4c965d9c655e871aeb1cfd7647c983617f613610c3e0"
         },
         "arm64": {
-            "url": "https://github.com/desktop/desktop/releases/download/release-3.4.20/GitHubDesktop-3.4.20-arm64-full.nupkg",
-            "hash": "db776544e6ee9002d71b6a980132b9cc88eee58b4218389b441f1769f18af65a"
+            "url": "https://github.com/desktop/desktop/releases/download/release-3.5.0/GitHubDesktop-3.5.0-arm64-full.nupkg",
+            "hash": "4aacb4f4a1ae5376578bd593ccfdbb884b0688119a525c6211585438399f3f33"
         }
     },
     "extract_dir": "lib\\net45",
