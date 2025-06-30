@@ -5,19 +5,16 @@
     "license": "Freeware",
     "url": "https://download.ccleaner.com/portable/ccsetup637.zip",
     "hash": "345d0ebb25431891f6bfc6f722440ed750960e3863c635dcbc0c70b53d7a38eb",
-    "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\ccleaner.ini\")) {",
-        "   Set-Content \"$dir\\ccleaner.ini\" @('[Options]', 'UpdateAuto=0', 'UpdateNotify=0', 'UpdateCheck=0', 'HelpImproveCCleaner=0') -Encoding ASCII",
-        "}",
-        "'winapp.ini', 'winreg.ini', 'winsys.ini' | ForEach-Object {",
-        "   if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null }",
-        "}",
-        "Copy-Item \"$persist_dir\\*\" \"$dir\" -Include 'branding.dll', 'CCleaner.dat' -ErrorAction SilentlyContinue"
-    ],
-    "uninstaller": {
-        "script": "Copy-Item \"$dir\\*\" \"$persist_dir\" -Include 'branding.dll', 'CCleaner.dat' -ErrorAction SilentlyContinue -Force"
-    },
     "architecture": {
+        "32bit": {
+            "bin": "CCleaner.exe",
+            "shortcuts": [
+                [
+                    "CCleaner.exe",
+                    "CCleaner"
+                ]
+            ]
+        },
         "64bit": {
             "bin": [
                 [
@@ -31,23 +28,26 @@
                     "CCleaner"
                 ]
             ]
-        },
-        "32bit": {
-            "bin": "CCleaner.exe",
-            "shortcuts": [
-                [
-                    "CCleaner.exe",
-                    "CCleaner"
-                ]
-            ]
         }
     },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\ccleaner.ini\")) {",
+        "   Set-Content \"$dir\\ccleaner.ini\" @('[Options]', 'UpdateAuto=0', 'UpdateNotify=0', 'UpdateCheck=0', 'HelpImproveCCleaner=0') -Encoding ASCII",
+        "}",
+        "'winapp.ini', 'winreg.ini', 'winsys.ini' | ForEach-Object {",
+        "   if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null }",
+        "}",
+        "Copy-Item \"$persist_dir\\*\" \"$dir\" -Include 'branding.dll', 'CCleaner.dat' -ErrorAction SilentlyContinue"
+    ],
     "persist": [
         "ccleaner.ini",
         "winapp.ini",
         "winreg.ini",
         "winsys.ini"
     ],
+    "uninstaller": {
+        "script": "Copy-Item \"$dir\\*\" \"$persist_dir\" -Include 'branding.dll', 'CCleaner.dat' -ErrorAction SilentlyContinue -Force"
+    },
     "checkver": {
         "url": "https://www.ccleaner.com/ccleaner/builds",
         "regex": "CCleaner Free \\(v([\\d.]+)\\) - Latest official release"
