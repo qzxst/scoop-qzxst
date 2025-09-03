@@ -5,15 +5,15 @@
         "url": "https://lmstudio.ai/terms",
         "identifier": "Apache-2.0"
     },
-    "version": "0.3.18-3",
+    "version": "0.3.24-6",
     "architecture": {
         "64bit": {
-            "url": "https://installers.lmstudio.ai/win32/x64/0.3.18-3/LM-Studio-0.3.18-3-x64.exe#/dl.7z",
-            "hash": "38882bbbf079c0297b5346d7c46d587a15f2bdafb36f193ecffc83c605f34ac3"
+            "url": "https://installers.lmstudio.ai/win32/x64/0.3.24-6/LM-Studio-0.3.24-6-x64.exe#/dl.7z",
+            "hash": "154a5eb83bb1f8db904f84fc79a474a3197edebce3ec9fc164d29a325c8e21ff"
         },
         "arm64": {
-            "url": "https://installers.lmstudio.ai/win32/arm64/0.3.18-3/LM-Studio-0.3.18-3-arm64.exe#/dl.7z",
-            "hash": "27ec3fc91c6c093bd2a4ce4ff408d9c52d7bc7503858f362f2cb989d9328faae"
+            "url": "https://installers.lmstudio.ai/win32/arm64/0.3.24-6/LM-Studio-0.3.24-6-arm64.exe#/dl.7z",
+            "hash": "aab5d8c06b0987323ccb2b7dc5e930838636f36d3487e0f860d9818d6a4d21c1"
         }
     },
     "installer": {
