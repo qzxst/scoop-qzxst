@@ -1,10 +1,10 @@
 {
-    "version": "11.131.2290.0",
+    "version": "11.134.5501.0",
     "description": "腾讯视频是腾讯推出的在线视频媒体平台。",
     "homepage": "https://v.qq.com/",
     "license": "BSD-3-Clause",
-    "url": "https://dldir1.qq.com/qqtv/TencentVideo11.131.2290.0.exe#/dl.7z",
-    "hash": "7b2a0a5da6e9625612723638fc83f8aeb029a1eefcfb95e9ad0d72d62be7dbd9",
+    "url": "https://dldir1.qq.com/qqtv/TencentVideo11.134.5501.0.exe#/dl.7z",
+    "hash": "c10804aaa8f1ea3303377ace64967ed275d56c149561d0b7d5d662774b493332",
     "installer": {
         "script": [
             "Import-Module  $bucketsdir/scoop-qzxst/scripts/AppsUtils.psm1",
