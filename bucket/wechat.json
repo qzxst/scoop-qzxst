@@ -7,13 +7,13 @@
         "url": "https://www.wechat.com/en/service_terms.html"
     },
     "architecture": {
-        "64bit": {
-            "url": "https://dldir1v6.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
-            "hash": "86593666b6a81a742435879db25c2575a9f8967b877968c91aaa8a68b5f21af4"
-        },
         "32bit": {
             "url": "https://dldir1v6.qq.com/weixin/Windows/WeChatSetup_x86.exe#/dl.7z",
             "hash": "5c28862066f28fe6723d7b3c9781708b7fafe61134b6322dd9f8e647c7e59992"
+        },
+        "64bit": {
+            "url": "https://dldir1v6.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
+            "hash": "86593666b6a81a742435879db25c2575a9f8967b877968c91aaa8a68b5f21af4"
         }
     },
     "installer": {
@@ -44,15 +44,15 @@
     },
     "checkver": {
         "url": "https://pc.weixin.qq.com/?lang=zh_CN",
-        "regex": "<div class=\"download-text\">下载 ([\\d.]+)</div>"
+        "regex": "https://weixin.qq.com/updates?platform=windows&amp;version=([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
-            "64bit": {
-                "url": "https://dldir1v6.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z"
-            },
             "32bit": {
                 "url": "https://dldir1v6.qq.com/weixin/Windows/WeChatSetup_x86.exe#/dl.7z"
+            },
+            "64bit": {
+                "url": "https://dldir1v6.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z"
             }
         }
     }
