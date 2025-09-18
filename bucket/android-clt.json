@@ -1,10 +1,10 @@
 {
     "version": "13114758",
     "description": "The official Android command line tools",
-    "homepage": "https://developer.android.com/studio#command-line-tools-only",
+    "homepage": "https://developer.android.google.cn/studio#command-line-tools-only",
     "license": {
         "identifier": "Freeware",
-        "url": "https://developer.android.com/studio/terms.html"
+        "url": "https://developer.android.google.cn/studio/terms.html"
     },
     "suggest": {
         "Java": "java/openjdk17"
@@ -64,7 +64,7 @@
     "autoupdate": {
         "url": "https://dl.google.com/android/repository/commandlinetools-win-$version_latest.zip",
         "hash": {
-            "url": "https://developer.android.com/studio",
+            "url": "https://developer.android.google.cn/studio",
             "regex": "commandlinetools-win(?:.*\\n){3}.*<td>($sha256)"
         }
     }
