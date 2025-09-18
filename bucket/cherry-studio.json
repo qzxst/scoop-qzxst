@@ -1,18 +1,22 @@
 {
-    "homepage": "https://cherry-ai.com",
+    "version": "1.5.11",
     "description": "支持多模型服务的 Windows/macOS GPT 客户端。",
-    "version": "1.1.18",
+    "homepage": "https://cherry-ai.com",
     "license": "Apache-2.0",
-    "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.18/Cherry-Studio-1.1.18-setup.exe#dl.7z",
-    "hash": "f6851d4d69840587f59ba4a78c0dd126c6867686050e165e13363b1bd27d6526",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.5.11/Cherry-Studio-1.5.11-x64-setup.exe#dl.7z",
+            "hash": "sha512:394125e0537cb659e3f6f9e653bd24ace67dfcaea862c5d85f4703249c58fe00c7df21c7d11958a40442a76284a864e25bf697d5d723aae65a904cdd6c14d3a0"
+        },
+        "arm64": {
+            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.5.11/Cherry-Studio-1.5.11-arm64-setup.exe#dl.7z ",
+            "hash": "sha512:394125e0537cb659e3f6f9e653bd24ace67dfcaea862c5d85f4703249c58fe00c7df21c7d11958a40442a76284a864e25bf697d5d723aae65a904cdd6c14d3a0"
+        }
+    },
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
         "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
     ],
-    "checkver": {
-        "github": "https://github.com/CherryHQ/cherry-studio",
-        "regex": "/CherryHQ/cherry-studio/releases/tag/v([\\d.]+)"
-    },
     "bin": [
         "Cherry Studio.exe",
         "Cherry Studio",
@@ -26,7 +30,22 @@
         ]
     ],
     "persist": "User Data",
+    "checkver": {
+        "github": "https://github.com/CherryHQ/cherry-studio",
+        "regex": "/CherryHQ/cherry-studio/releases/tag/v([\\d.]+)"
+    },
     "autoupdate": {
-        "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-setup.exe#dl.7z"
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "(?sm).*?sha512:\\s+$base64"
+        },
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-x64-setup.exe#dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-arm64-setup.exe#dl.7z "
+            }
+        }
     }
 }
