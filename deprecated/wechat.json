@@ -44,7 +44,7 @@
     },
     "checkver": {
         "url": "https://pc.weixin.qq.com/?lang=zh_CN",
-        "regex": "https://weixin.qq.com/updates?platform=windows&amp;version=([\\d.]+)"
+        "regex": "<a href=\"https://weixin.qq.com/updates?platform=windows&amp;version=([\\d.]+)\" target=\"_blank\">更多日志</a>"
     },
     "autoupdate": {
         "architecture": {
