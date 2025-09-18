@@ -22,7 +22,7 @@
         ]
     },
     "checkver": {
-        "url": "https://github.com/obgnail/typora_plugin/releases.atom",
+        "github": "https://github.com/obgnail/typora_plugin",
         "regex": "/releases/tag/([\\d.]+)"
     },
     "autoupdate": {
