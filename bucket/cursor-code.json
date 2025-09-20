@@ -51,12 +51,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.cursor.com/production/$matchCode/win32/x64/user-setup/CursorUserSetup-x64-$version.exe",
-                "hash": {
-                    "url": "https://cursor.com/api/download?platform=win32-x64-user&releaseTrack=stable",
-                    "jsonpath": "$.commitSha",
-                    "type": "sha1"
-                }
+                "url": "https://downloads.cursor.com/production/$matchCode/win32/x64/user-setup/CursorUserSetup-x64-$version.exe"
             }
         }
     },
