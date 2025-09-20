@@ -7,7 +7,7 @@
         "url": "https://www.aihub.cn/privacy-policy"
     },
     "url": "https://github.com/classfang/AIHub/releases/download/v1.8.9/aihub-1.8.9-setup.exe#dl.7z",
-    "hash": "4263c81b3ea17b85677fea1993df9e01a169bafb09570bdb38c93da8c20f8b98",
+    "hash": "sha512:b990c2d4da1bd668ddb5ed6ca388c8f30b8c3e60c38bcee4bdba6fb4f29e72ab6e10b96b90f69f977be36aa7a918619825add81e5d6706277023bb69dca2bea5",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
         "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
