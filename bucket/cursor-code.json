@@ -1,5 +1,5 @@
 {
-    "version": "1.6.27",
+    "version": "1.6.45",
     "description": "The AI Code Editor",
     "homepage": "https://www.cursor.com/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.cursor.com/production/d750e54bba5cffada6d7b3d18e5688ba5e944ad9/win32/x64/user-setup/CursorUserSetup-x64-1.6.27.exe",
-            "hash": "sha1:d750e54bba5cffada6d7b3d18e5688ba5e944ad9"
+            "url": "https://downloads.cursor.com/production/3ccce8f55d8cca49f6d28b491a844c699b8719a3/win32/x64/user-setup/CursorUserSetup-x64-1.6.45.exe",
+            "hash": "6657047e21dc829a44be2f85689f9d3b4de3bcd2cff95bb8c9ddd6b92d3c00f2"
         }
     },
     "extract_dir": "{code_GetDestDir}",
