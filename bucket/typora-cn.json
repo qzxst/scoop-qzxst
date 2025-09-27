@@ -1,5 +1,5 @@
 {
-    "version": "1.11.7",
+    "version": "1.12.1",
     "description": "一款 Markdown 编辑器和阅读器",
     "homepage": "https://www.typoraio.cn",
     "license": {
@@ -8,11 +8,11 @@
     },
     "notes": "For old beta version, install: versions/typora0.11.18",
     "url": [
-        "https://downloads.typoraio.cn/windows/typora-setup-x64-1.11.7.exe",
+        "https://downloads.typoraio.cn/windows/typora-setup-x64-1.12.1.exe",
         "https://ghp.ci/https://raw.githubusercontent.com/markyin0707/typora-activation/master/winmm.dll"
     ],
     "hash": [
-        "9cd8a1a76cbe6412ec0d718fd9195f1ecae574266979c79942fd8514fcf19c84",
+        "30ae6fa152f5090b10353f6fed3b8b7531653c4b1fd8a0976af9ac376c620d9a",
         "364d4e21ab46ab0ad21a02e5cf709177428a5e29b044522eacec9ba987861adf"
     ],
     "pre_install": [
