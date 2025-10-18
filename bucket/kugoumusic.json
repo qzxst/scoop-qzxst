@@ -1,10 +1,10 @@
 {
-    "version": "6.99.70",
+    "version": "6.99.82",
     "description": "Hello, KuGou!",
     "homepage": "https://www.kugou.com/",
     "license": "Unknown",
     "url": "http://download.kugou.com/download/kugou_pc#/dl.7z",
-    "hash": "61f5f98986c26fc0b05e14876ad53ef9c510c8a5c60155378ae696a1c3d1ac41",
+    "hash": "87e1350e55e6ce548b52005b5bc79c416c86750d22dd3cfb9312c90577bf8b04",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\KuGou.7z\" \"$dir\"",
