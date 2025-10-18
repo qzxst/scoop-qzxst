@@ -1,5 +1,5 @@
 {
-    "version": "3.5.139",
+    "version": "3.5.150",
     "description": "The everything app, for work.",
     "homepage": "https://clickup.com/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.todesktop.com/221003ra4tebclw/ClickUp%20Setup%203.5.139%20-%20Build%20250828m7ieelx7h-x64.exe#/dl.7z",
-            "hash": "sha512:ceffa870b2182d6991126462efa7a528f27317e255dbe4d688d573f27eedb36479b1d2fe335af66a65ce01871b71525247092ed65f67580dc7b772561b57c8e4",
+            "url": "https://download.todesktop.com/221003ra4tebclw/ClickUp%20Setup%203.5.150%20-%20Build%20251013m2bgbbgpp-x64.exe#/dl.7z",
+            "hash": "sha512:cf25fe7804d0ed5401d1df2e0d6ab40887f2dcc5b6536e09b1cfd6b0487cb9b81d43ebd24201abdca8d12d0611df4aa1429fd6d5343314969fb4ec7167f62e5c",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
