@@ -1,5 +1,5 @@
 {
-    "version": "3.6.18",
+    "version": "3.6.19",
     "description": "Turn to-dos into daily action plans",
     "homepage": "https://www.morgen.so/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.todesktop.com/210203cqcj00tw1/Morgen%20Setup%203.6.18%20-%20Build%20250916xok83lra4-x64.exe#/dl.7z",
-            "hash": "08d29547e6d6f8e2a64fbdb66f5759fd5c124e9fc6e181ff9560ef35918ec1cc",
+            "url": "https://download.todesktop.com/210203cqcj00tw1/Morgen%20Setup%203.6.19%20-%20Build%20250927sfzvudsa6-x64.exe#/dl.7z",
+            "hash": "sha512:b1e580956094a93b717e1657a9c4e2e9ddc66b1e4fb3f9e205a12050a1ca9ac28f5e02f848916fe16b5567d78a2cda511fca07df35a10760ae2d1a64df48878f",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
