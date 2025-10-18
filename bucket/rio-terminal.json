@@ -1,5 +1,5 @@
 {
-    "version": "0.2.31",
+    "version": "0.2.32",
     "description": "A modern terminal for the 21st century.",
     "homepage": "https://raphamorim.io/rio/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/raphamorim/rio/releases/download/v0.2.31/Rio-portable-x86_64.exe#/rio.exe",
-            "hash": "f5c7f170a8cc28618c40d18c8d472bd89f6f3ef71534a1e6799aed11a16417a3"
+            "url": "https://github.com/raphamorim/rio/releases/download/v0.2.32/Rio-portable-x86_64.exe#/rio.exe",
+            "hash": "592e037197c5fc3d4d8dac18fb0416dd4bf2b915d985546126e8aefb8fce343a"
         }
     },
     "bin": "rio.exe",
