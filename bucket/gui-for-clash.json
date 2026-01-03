@@ -1,20 +1,20 @@
 {
-    "version": "1.14.0",
+    "version": "1.16.0",
     "description": "A GUI program for Clash developed by vue3 + wails.",
     "homepage": "https://github.com/GUI-for-Cores/GUI.for.Clash",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.14.0/GUI.for.Clash-windows-amd64.zip",
-            "hash": "e11a1923a05d00d11f5a9fdac75d91e8695ab1de7806ed9d055632a997c3b66e"
+            "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.16.0/GUI.for.Clash-windows-amd64.zip",
+            "hash": "dc816ca73c9d9d6ee2c13d52c14975e68df7309b2735be43446020d2d0d0f111"
         },
         "32bit": {
-            "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.14.0/GUI.for.Clash-windows-386.zip",
-            "hash": "7dffe67b7c0af587f30574f43e4625af7d907f16ba65f0449e7d138f06a0df70"
+            "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.16.0/GUI.for.Clash-windows-386.zip",
+            "hash": "11e5353bd663d71cf7b4c54728aa49d490850a27b7cbbdb52ad6dc40b083084f"
         },
         "arm64": {
-            "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.14.0/GUI.for.Clash-windows-arm64.zip",
-            "hash": "78baf8e5572fa7e1b9fef4a46f4a19a690bda7d28bf468842c40b58cdf2877b6"
+            "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.16.0/GUI.for.Clash-windows-arm64.zip",
+            "hash": "c62371b56e4323f4de0db191c3dbad58e20457e271d81a1c7bf078fee40decba"
         }
     },
     "shortcuts": [
