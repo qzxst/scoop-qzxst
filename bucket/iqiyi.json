@@ -1,10 +1,10 @@
 {
-    "version": "13.12.5.9706",
+    "version": "14.1.0.9732",
     "description": "爱奇艺，中国高品质视频娱乐服务提供者",
     "homepage": "https://www.iqiyi.com/",
     "license": "BSD-3-Clause",
-    "url": "https://mesh.if.iqiyi.com/player/Upgrade/file/13.12.5.9706/IQIYIsetup_winget.exe#/setup.exe",
-    "hash": "fac139f89c9e3f7459b942030bb8beddb108cd73365834ffc00d6338c68850d6",
+    "url": "https://mesh.if.iqiyi.com/player/Upgrade/file/14.1.0.9732/IQIYIsetup_winget.exe#/setup.exe",
+    "hash": "128ea523c957ffedab4c7852fc126ff4cae8acb12a4bcc6e6624d3d93ba3d869",
     "shortcuts": [
         [
             "IQIYIClient.exe",
