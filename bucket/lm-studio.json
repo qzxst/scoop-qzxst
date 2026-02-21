@@ -30,7 +30,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://lmstudio.ai",
+        "url": "https://lmstudio.ai/download",
         "regex": "LM-Studio-([\\d-.]+)-x64.exe"
     },
     "autoupdate": {
