@@ -31,7 +31,7 @@
         },
         "architecture": {
             "64bit": {
-                "url": "https://github.com/amnweb/yasb/releases/download/v$version/yasb-$version-win64.msi"
+                "url": "https://github.com/amnweb/yasb/releases/download/v$version/yasb-$version-x64.msi"
             }
         }
     }

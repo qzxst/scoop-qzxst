@@ -27,11 +27,15 @@
         "pens.ini"
     ],
     "checkver": {
-        "url": "https://github.com/pubpub-zz/ppInk/tags",
+        "url": "https://github.com/pubpub-zz/ppInk",
         "regex": "/pubpub-zz/ppInk/releases/tag/v([\\w.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/pubpub-zz/ppInk/releases/download/v$version/ppInk.zip",
+        "hash": {
+            "url": "https://github.com/pubpub-zz/ppInk/releases/tag/v$version",
+            "regex": "<td>$basename</td>\\s*<td>$sha256</td>"
+        },
         "extract_dir": "ppink"
     }
 }

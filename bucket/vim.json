@@ -1,5 +1,5 @@
 {
-    "version": "9.1.0",
+    "version": "9.2.0",
     "description": "A highly configurable text editor",
     "homepage": "https://www.vim.org",
     "license": "Vim",
@@ -9,20 +9,23 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.1.0/gvim_9.1.0_x64_signed.zip",
-            "hash": "72002de6d790b6013efe3f38b11b5f8f0f9e7621fdcc91e2ef3ad183718e3569",
-            "extract_dir": "vim/vim91"
+            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.2.0/gvim_9.2.0_x64_signed.zip",
+            "hash": "99918334e14c01e861bda950a92a91d0c86c7d7296ef25d6af2034f0d47e817c"
         },
         "32bit": {
-            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.1.0/gvim_9.1.0_x86_signed.zip",
-            "hash": "9be536a1aec970c822177594c6d2ccec739ef344e8b2871c0d174a7f75aa5357",
-            "extract_dir": "vim/vim91"
+            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.2.0/gvim_9.2.0_x86_signed.zip",
+            "hash": "493250952a2b549987a7d23534a8e76b30113f597299be458043fc48c887333a"
+        },
+        "arm64": {
+            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.2.0/gvim_9.2.0_arm64_signed.zip",
+            "hash": "3f5108c0ed7f0bf2fd6a6fb4c45955803dc0c7f35d3c9a656df7a85bca1b441d"
         }
     },
+    "extract_dir": "vim/vim92",
     "post_install": [
         "'install-context.reg', 'uninstall-context.reg' | ForEach-Object {",
         "    $vimpath = \"$dir\\gVim.exe\".Replace('\\', '\\\\')",
-        "    $content = (Get-Content \"$bucketsdir\\scoop-qzxst\\scripts\\vim\\$_\").Replace('$vim', $vimpath)",
+        "    $content = (Get-Content \"$bucketsdir\\main\\scripts\\vim\\$_\").Replace('$vim', $vimpath)",
         "    if ($global) { $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE') }",
         "    Set-Content \"$dir\\$_\" $content",
         "}"
@@ -98,19 +101,22 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.vim.org/download.php",
-        "regex": "gvim_([\\d.]+)_x\\d{2}_signed.zip"
+        "url": "https://api.github.com/repositories/50428480/releases?per_page=45",
+        "jsonpath": "$[?(@.prerelease == false)].assets[?(@.name =~ /signed\\.zip/i)].browser_download_url",
+        "regex": "(?i)download/(?<tag>[^/]+)/gvim_([\\d.]+)_(?:x|arm)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/vim/vim-win32-installer/releases/download/v$version/gvim_$version_x64_signed.zip",
-                "extract_dir": "vim/vim$majorVersion$minorVersion"
+                "url": "https://github.com/vim/vim-win32-installer/releases/download/v$version/gvim_$version_x64_signed.zip"
             },
             "32bit": {
-                "url": "https://github.com/vim/vim-win32-installer/releases/download/v$version/gvim_$version_x86_signed.zip",
-                "extract_dir": "vim/vim$majorVersion$minorVersion"
+                "url": "https://github.com/vim/vim-win32-installer/releases/download/v$version/gvim_$version_x86_signed.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/vim/vim-win32-installer/releases/download/v$version/gvim_$version_arm64_signed.zip"
             }
-        }
+        },
+        "extract_dir": "vim/vim$majorVersion$minorVersion"
     }
 }
