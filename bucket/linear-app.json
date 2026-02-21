@@ -1,5 +1,5 @@
 {
-    "version": "1.28.6",
+    "version": "1.28.10",
     "description": "Linear is a purpose-built tool for planning and building products",
     "homepage": "https://linear.app/",
     "license": {
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.todesktop.com/200315glz2793v6/Linear%20Setup%201.28.6%20-%20Build%20251002av7g3go28-x64.exe#/dl.7z",
-            "hash": "sha512:2bd8b2e2e565c1dc1f859e0399aae42855562c3935983b4af3136ba46c8720784136316cda04058dd469d939b6abf292cc0a560e5a2638622d3a44ac418f6be9",
+            "url": "https://download.todesktop.com/200315glz2793v6/Linear%20Setup%201.28.10%20-%20Build%20260130ifjf6a66q-x64.exe#/dl.7z",
+            "hash": "sha512:d834619831c36f0f61751b737962260c829b953ff8116a0b41f3dd726f624e4e65eeb281bc480fc35aad1241ee6fa1587ba5cd07dbacdd52c0b27b78285d1034",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
             ]
         },
         "arm64": {
-            "url": "https://download.todesktop.com/200315glz2793v6/Linear%20Setup%201.28.6%20-%20Build%20251002av7g3go28-arm64.exe#/dl.7z",
-            "hash": "sha512:2b3648ef8f24b6ac6c27502a82770eacbd51f63f35ac64f5cafdc0326cd0ea3616a242f6cde3cbb76243e1238a4406c5e1e880fda738ad72ef82eee3a40c7053",
+            "url": "https://download.todesktop.com/200315glz2793v6/Linear%20Setup%201.28.10%20-%20Build%20260130ifjf6a66q-arm64.exe#/dl.7z",
+            "hash": "sha512:27115d632e81b61512ed467c3c7e0a01a22e1dafd25df3d7446717cc030184948104e8a5b0ee3ebe9483edf099aefa5630308d10a8354df7f2fbf539b037565d",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
