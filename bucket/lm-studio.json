@@ -1,11 +1,11 @@
 {
-    "homepage": "https://lmstudio.ai/",
-    "description": "Discover, download, and run local LLMs",
-    "license": {
-        "url": "https://lmstudio.ai/terms",
-        "identifier": "Apache-2.0"
-    },
     "version": "0.3.30-1",
+    "description": "Discover, download, and run local LLMs",
+    "homepage": "https://lmstudio.ai/",
+    "license": {
+        "identifier": "Apache-2.0",
+        "url": "https://lmstudio.ai/terms"
+    },
     "architecture": {
         "64bit": {
             "url": "https://installers.lmstudio.ai/win32/x64/0.3.30-1/LM-Studio-0.3.30-1-x64.exe#/dl.7z",
