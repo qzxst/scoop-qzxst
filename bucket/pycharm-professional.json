@@ -1,13 +1,13 @@
 {
-    "version": "2025.3.1.1-253.29346.308",
+    "version": "2025.3.3-253.31033.139",
     "description": "Cross-Platform IDE for Python by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/python/pycharm-professional-2025.3.1.1.win.zip",
-    "hash": "241d14e46c22ec3e37e5cbf0c5335e671c4f15f3a1312710ad33d1cb93773a9a",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-2025.3.3.win.zip",
+    "hash": "1a68aff22d392f308f0a570e033b83a7f73424a55ab8bc3986a2b2f66405cc9f",
     "extract_to": "IDE",
     "pre_install": [
         "Get-ChildItem \"$persist_dir\\IDE\\bin\\pycharm*.exe.vmoptions\" -ErrorAction SilentlyContinue | Copy-Item -Destination \"$dir\\IDE\\bin\"",
