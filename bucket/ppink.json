@@ -1,10 +1,10 @@
 {
-    "version": "1.9.0RC1",
+    "version": "1.9.100",
     "description": "On-screen annotation software under Windows, forked from gInk",
     "homepage": "https://github.com/pubpub-zz/ppInk",
     "license": "MIT",
-    "url": "https://github.com/pubpub-zz/ppInk/releases/download/v1.9.0RC1/ppInk.zip",
-    "hash": "6e99f4dbf7e3c1e2d2e0cb99a66bf944056e2fbc336d3ff990aa21edbaf7a945",
+    "url": "https://github.com/pubpub-zz/ppInk/releases/download/v1.9.100/ppInk.1.9.100.zip",
+    "hash": "3d7317bee4dd396b3b088bd116008b605938902512d1246a5dcb9df7a735b2ff",
     "extract_dir": "ppink",
     "pre_install": [
         "if (-not (Test-Path \"$persist_dir\\config.ini\")) {",
@@ -31,10 +31,11 @@
         "regex": "/pubpub-zz/ppInk/releases/tag/v([\\w.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/pubpub-zz/ppInk/releases/download/v$version/ppInk.zip",
+        "url": "https://github.com/pubpub-zz/ppInk/releases/download/v$version/ppInk.$version.zip",
         "hash": {
-            "url": "https://github.com/pubpub-zz/ppInk/releases/tag/v$version",
-            "regex": "<td>$basename</td>\\s*<td>$sha256</td>"
+            "url": "https://api.github.com/repos/pubpub-zz/ppInk/releases/latest",
+            "jsonpath": "$.assets[?(@.name == 'ppInk.$version.zip')].digest",
+            "type": "sha256"
         },
         "extract_dir": "ppink"
     }
