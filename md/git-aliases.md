@@ -1,9 +1,9 @@
 # git-aliases
 
-- **hash**: 2e848df6a2c8c5d7c4dadfbbfc3f61a183ebb14c2632121f6c35f009976035ae
-- **version**: 0.3.7
+- **url**: [https://psg-prod-eastus.azureedge.net/packages/git-aliases.0.3.8.nupkg](https://psg-prod-eastus.azureedge.net/packages/git-aliases.0.3.8.nupkg)
+- **version**: 0.3.8
 - **description**: A PowerShell module that provides partial Git aliases from Oh My Zsh's git plugin.
 - **license**: MIT
-- **url**: [https://psg-prod-eastus.azureedge.net/packages/git-aliases.0.3.7.nupkg](https://psg-prod-eastus.azureedge.net/packages/git-aliases.0.3.7.nupkg)
+- **hash**: 9463cfe2d4c4c1cf8e3e73a687fed5bd34da6a9f736fd8a8cf071430f30c3f07
 - **homepage**: [https://github.com/gluons/powershell-git-aliases](https://github.com/gluons/powershell-git-aliases)
 

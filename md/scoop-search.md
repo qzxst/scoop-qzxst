@@ -1,9 +1,9 @@
 # scoop-search
 
-- **hash**: cd2ad19b6a14b3a97965d81bfe8def59de2c38e597022a0b2a99f3335edb1340
-- **version**: 2.0.0
+- **url**: [https://github.com/shilangyu/scoop-search/releases/download/v2.1.0/scoop-search.exe](https://github.com/shilangyu/scoop-search/releases/download/v2.1.0/scoop-search.exe)
+- **version**: 2.1.0
 - **description**: Fast scoop search drop-in replacement
 - **license**: MIT
-- **url**: [https://github.com/shilangyu/scoop-search/releases/download/v2.0.0/scoop-search.exe](https://github.com/shilangyu/scoop-search/releases/download/v2.0.0/scoop-search.exe)
+- **hash**: 387ef78ad8c212a36bb38077e67b51adaec1cee8bbcdc50f35d1107d1fe70705
 - **homepage**: [https://github.com/shilangyu/scoop-search](https://github.com/shilangyu/scoop-search)
 

@@ -1,11 +1,11 @@
 # bandizip
 
-- **hash**: a9111884ed2011fb4b709dbf8d0a9cd7cc5a806d920f58fdac4a4b0752475490
-- **version**: 7.37
+- **url**: [https://bandisoft.app/bandizip/BANDIZIP-PORTABLE.ZIP](https://bandisoft.app/bandizip/BANDIZIP-PORTABLE.ZIP)
+- **version**: 7.43
 - **description**: Yet another typical ZIP archiver
 - **license**:
   - **identifier**: Freeware
   - **url**: [https://en.bandisoft.com/bandizip/eula/](https://en.bandisoft.com/bandizip/eula/)
-- **url**: [https://dl.bandisoft.com/bandizip.std/BANDIZIP-PORTABLE.ZIP](https://dl.bandisoft.com/bandizip.std/BANDIZIP-PORTABLE.ZIP)
+- **hash**: 00b1d4634147bf5ae1d7dc8aef33d38a4409951394677fe798d540a0f7d719d8
 - **homepage**: [http://www.bandisoft.com/bandizip/](http://www.bandisoft.com/bandizip/)
 

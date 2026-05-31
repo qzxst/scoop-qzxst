@@ -1,9 +1,9 @@
 # android-studio
 
-- **homepage**: [https://developer.android.com/studio/](https://developer.android.com/studio/)
+- **homepage**: [https://developer.android.google.cn/studio/](https://developer.android.google.cn/studio/)
 - **description**: The official IDE for Android development, which includes everything you need to build Android apps.
-- **version**: 2024.2.2.14
 - **license**:
   - **identifier**: Freeware
-  - **url**: [https://developer.android.com/studio/terms.html](https://developer.android.com/studio/terms.html)
+  - **url**: [https://developer.android.google.cn/studio/terms.html](https://developer.android.google.cn/studio/terms.html)
+- **version**: 2025.2.3.9
 

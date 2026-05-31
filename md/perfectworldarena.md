@@ -1,9 +1,9 @@
 # perfectworldarena
 
-- **hash**: sha512:17061992738b0083ca8f7415f48073b8ff20287e1dcc5e77c3ced10200e7af59390f2d36c4a820b40f6892701d935a4051baa9e93d9427933cbdbe59377b0754
-- **version**: 1.0.25022211
+- **url**: [https://client.wmpvp.com/download/perfectworldarena_win32_v1.0.26052811.exe#/dl.7z](https://client.wmpvp.com/download/perfectworldarena_win32_v1.0.26052811.exe#/dl.7z)
+- **version**: 1.0.26052811
 - **description**: Esport arena operated by Perfect World
 - **license**: Proprietary
-- **url**: [https://client.wmpvp.com/download/perfectworldarena_win32_v1.0.25022211.exe#/dl.7z](https://client.wmpvp.com/download/perfectworldarena_win32_v1.0.25022211.exe#/dl.7z)
+- **hash**: sha512:a72130d43ae42072884fabc91c143dfcda365ced435fac1b7e8aba89e71afc7420b5cde3b8a9bfafe0000831880dde9c0aee2762d2e1db5eef8c1c02b2e47115
 - **homepage**: [https://pvp.wanmei.com/](https://pvp.wanmei.com/)
 

@@ -1,9 +1,9 @@
 # ollama-full
 
-- **hash**: 14961baafa52dfad4091bba0266bdd93d6a9e9b6f5259aec69192c468f3bf334
-- **version**: 0.5.11
+- **url**: [https://github.com/ollama/ollama/releases/download/v0.24.0/OllamaSetup.exe](https://github.com/ollama/ollama/releases/download/v0.24.0/OllamaSetup.exe)
+- **version**: 0.24.0
 - **description**: Get up and running with large language models locally.
 - **license**: MIT
-- **url**: [https://github.com/ollama/ollama/releases/download/v0.5.11/OllamaSetup.exe](https://github.com/ollama/ollama/releases/download/v0.5.11/OllamaSetup.exe)
+- **hash**: c445439b0101f0cc6a3419a4a198353472dbef22028843e4fc10203ef7352c75
 - **homepage**: [https://ollama.com/](https://ollama.com/)
 
