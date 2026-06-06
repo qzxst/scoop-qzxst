@@ -32,7 +32,7 @@
         "bin\\idea.properties",
         "bin\\studio64.exe.vmoptions"
     ],
-    "checkver": "android-studio-([\\d.]+)-windows\\.zip",
+    "checkver": "/ide-zips/(?<version>[\\d.]+)/(?<filename>android-studio.*windows\\.zip)",
     "autoupdate": {
         "architecture": {
             "64bit": {
