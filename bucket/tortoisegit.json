@@ -38,7 +38,10 @@
         "(gc \"$bucketdir\\..\\scripts\\tortoisegit\\tortoisegit-install-tools.reg.templ\") | % {$_ -replace \"%TGITHOME%\",\"$escdir\"} | out-file -enc oem \"$dir\\tortoisegit-install-tools.reg\"",
         "cp \"$bucketdir\\..\\scripts\\tortoisegit\\tortoisegit-uninstall.reg\" \"$dir\""
     ],
-    "bin": "bin\\TortoiseGitUDiff.exe",
+    "bin": [
+        "bin\\TortoiseGitUDiff.exe",
+        "bin\\TortoiseGitPlink.exe"
+    ],
     "shortcuts": [
         [
             "bin\\TortoiseGitMerge.exe",
@@ -59,19 +62,20 @@
         ]
     ],
     "checkver": {
-        "url": "https://tortoisegit.org/docs/releasenotes/",
-        "regex": "Release ([0-9.]+)"
+        "url": "https://tortoisegit.org/download/",
+        "regex": "<a href=//download.tortoisegit.org/tgit/(?<version>[\\d\\.]+)/TortoiseGit-(?<patch>[\\d\\.]+)-32bit.msi",
+        "replace": "${patch}"
     },
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://download.tortoisegit.org/tgit/$majorVersion.$minorVersion.$patchVersion.0/TortoiseGit-$version-32bit.msi"
+                "url": "https://download.tortoisegit.org/tgit/$matchVersion/TortoiseGit-$matchPatch-32bit.msi"
             },
             "64bit": {
-                "url": "https://download.tortoisegit.org/tgit/$majorVersion.$minorVersion.$patchVersion.0/TortoiseGit-$version-64bit.msi"
+                "url": "https://download.tortoisegit.org/tgit/$matchVersion/TortoiseGit-$matchPatch-64bit.msi"
             },
             "arm64": {
-                "url": "https://download.tortoisegit.org/tgit/$majorVersion.$minorVersion.$patchVersion.0/TortoiseGit-$version-arm64.msi"
+                "url": "https://download.tortoisegit.org/tgit/$matchVersion/TortoiseGit-$matchPatch-arm64.msi"
             }
         }
     }
