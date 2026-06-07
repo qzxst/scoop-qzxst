@@ -65,13 +65,13 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://download.tortoisegit.org/tgit/$version/TortoiseGit-$version-32bit.msi"
+                "url": "https://download.tortoisegit.org/tgit/$majorVersion.$minorVersion.$patchVersion.0/TortoiseGit-$version-32bit.msi"
             },
             "64bit": {
-                "url": "https://download.tortoisegit.org/tgit/$version/TortoiseGit-$version-64bit.msi"
+                "url": "https://download.tortoisegit.org/tgit/$majorVersion.$minorVersion.$patchVersion.0/TortoiseGit-$version-64bit.msi"
             },
             "arm64": {
-                "url": "https://download.tortoisegit.org/tgit/$version/TortoiseGit-$version-arm64.msi"
+                "url": "https://download.tortoisegit.org/tgit/$majorVersion.$minorVersion.$patchVersion.0/TortoiseGit-$version-arm64.msi"
             }
         }
     }
