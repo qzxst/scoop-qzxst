@@ -1,5 +1,5 @@
 {
-    "version": "2.18.0.1",
+    "version": "2.19.1.0",
     "description": "Windows Shell Interface to Git based on TortoiseSVN.",
     "homepage": "https://tortoisegit.org/",
     "license": {
@@ -12,16 +12,16 @@
     ],
     "architecture": {
         "32bit": {
-            "url": "https://download.tortoisegit.org/tgit/2.18.0.0/TortoiseGit-2.18.0.1-32bit.msi",
-            "hash": "851cfeffbf2fe0c522eaed6b88b2695cccb4555161f8afa0a77f17902fd6a9a3"
+            "url": "https://download.tortoisegit.org/tgit/2.19.0.0/TortoiseGit-2.19.1.0-32bit.msi",
+            "hash": "12db1efefec43832886911ee8d52f7eac6d6fa53d1321b0bec3ed726eb6f21d3"
         },
         "64bit": {
-            "url": "https://download.tortoisegit.org/tgit/2.18.0.0/TortoiseGit-2.18.0.1-64bit.msi",
-            "hash": "cbf7d52aa0ecca665521e14d8d1a4b6cda52a4bc13de45f49084e15571c77410"
+            "url": "https://download.tortoisegit.org/tgit/2.19.0.0/TortoiseGit-2.19.1.0-64bit.msi",
+            "hash": "e07ebf37063023d96dc8509a5d69ffa52d316cda8feea08beddad4b9818e7be5"
         },
         "arm64": {
-            "url": "https://download.tortoisegit.org/tgit/2.18.0.0/TortoiseGit-2.18.0.1-arm64.msi",
-            "hash": "d6cc582bb7cdcf57e662861639be8b4d02ed5f75627b04ae2caaea4c7d40658b"
+            "url": "https://download.tortoisegit.org/tgit/2.19.0.0/TortoiseGit-2.19.1.0-arm64.msi",
+            "hash": "1706cb8093486e40080e0a156499e653fc916b0258a7d5121b4e8d84736b0c13"
         }
     },
     "extract_dir": "Program Files\\TortoiseGit",
