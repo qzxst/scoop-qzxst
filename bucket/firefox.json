@@ -1,5 +1,5 @@
 {
-    "version": "152.0.5",
+    "version": "153.0",
     "description": "Popular open source web browser.",
     "homepage": "https://www.mozilla.org/firefox/",
     "license": "MPL-2.0",
@@ -11,16 +11,16 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/152.0.5/win64/en-US/Firefox%20Setup%20152.0.5.exe#/dl.7z",
-            "hash": "sha512:aa3a99577c2509761ce7aba71ac433c7f280de6687456f96619687ea9546f511be42b63cd1944c4037b0e9d38cc4f6fa7a008632cdcb247b59ad2769fbf4107d"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/153.0/win64/en-US/Firefox%20Setup%20153.0.exe#/dl.7z",
+            "hash": "sha512:2d7df639c637842f7d71d5f720e4d4ab80e0bed8a2f71820fff34b28d1c74e21245bbe7db33c1f13e26faebf1e7015680e6027d049a7c020dfdf003d24235043"
         },
         "32bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/152.0.5/win32/en-US/Firefox%20Setup%20152.0.5.exe#/dl.7z",
-            "hash": "sha512:0115f59cc7e7cece566a9247cf896f767fefcfaa7d83452ddab6593167b1dab68d01f4b945887e97a6b3aa28e8ce8b6868ac8c70197472dd7fdbb84603cc9065"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/153.0/win32/en-US/Firefox%20Setup%20153.0.exe#/dl.7z",
+            "hash": "sha512:f267b170a34420f288d1ae280614ba51f2527b8058edb57202db3ccdd617751ec6b68331303df172ed8b953d0c3a0c7bb02d87837dac2ef62bdbdaa862950ee4"
         },
         "arm64": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/152.0.5/win64-aarch64/en-US/Firefox%20Setup%20152.0.5.exe#/dl.7z",
-            "hash": "sha512:7d0ce508719bb0e9bb3bd4e6818fcef42cb8a515ec7613857a42f71e81d3e0296fbcfa11873c4cf521323d4d4284eae612b8e4b024e4e4a62a479cbe4d95348e"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/153.0/win64-aarch64/en-US/Firefox%20Setup%20153.0.exe#/dl.7z",
+            "hash": "sha512:30696bd641048b47644357da14bbd1e6b38cd1fc756782941022a4bf47493d639390a996b3dfe33130bf67e1cf78e3f80b7482c2a7ab4e88704fa7c248b553bf"
         }
     },
     "extract_dir": "core",
