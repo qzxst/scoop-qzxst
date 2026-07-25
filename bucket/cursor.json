@@ -1,5 +1,5 @@
 {
-    "version": "3.11.13",
+    "version": "3.13.10",
     "description": "The AI Code Editor",
     "homepage": "https://www.cursor.com/",
     "license": {
@@ -9,12 +9,12 @@
     "innosetup": true,
     "architecture": {
         "64bit": {
-            "url": "https://downloads.cursor.com/production/3f21b08f0b436a07be29fbfe00b304fa15553353/win32/x64/user-setup/CursorUserSetup-x64-3.11.13.exe",
-            "hash": "e8d9a9e3eac63189739eb34be97a6df7bf2853fe17ef2b75ca6ac455c8682744"
+            "url": "https://downloads.cursor.com/production/4f02290ccd9304f0e6bf8ee85f6e9106f02ac1f7/win32/x64/user-setup/CursorUserSetup-x64-3.13.10.exe",
+            "hash": "2f99ebb41bcce62cd6c8e4611e56a613b9abaf2399a8ce02e7925798e0f64522"
         },
         "arm64": {
-            "url": "https://downloads.cursor.com/production/3f21b08f0b436a07be29fbfe00b304fa15553353/win32/arm64/user-setup/CursorUserSetup-arm64-3.11.13.exe",
-            "hash": "3431641153f10ab523671c0cd1feedc327bd2bb24e022ca269c52be79c0a3d44"
+            "url": "https://downloads.cursor.com/production/4f02290ccd9304f0e6bf8ee85f6e9106f02ac1f7/win32/arm64/user-setup/CursorUserSetup-arm64-3.13.10.exe",
+            "hash": "7cd6c817263f0ef12de2a64c44c8323ee399ffb8fe17782e0270b5a3c044e771"
         }
     },
     "extract_dir": "{code_GetDestDir}",
