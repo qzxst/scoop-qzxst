@@ -1,12 +1,12 @@
 {
-    "version": "2.8.45",
+    "version": "2.8.48",
     "description": "All-in-one collaboration platform for API documentation, API debugging, API Mock and API test automation.",
     "homepage": "https://apifox.com",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://file-assets.apifox.com/download/2.8.45/Apifox-2.8.45.exe#/dl.7z",
-            "hash": "sha512:c949e78dc657cb259a81246ec3265dfcc591753674824427bc0afd54f3438e6e298be33fec7c089c34137b8ee3f1d1a8ad6152ccae31172be501177631b31960"
+            "url": "https://file-assets.apifox.com/download/2.8.48/Apifox-2.8.48.exe#/dl.7z",
+            "hash": "sha512:676096d601cb4ff039f612e9d6e87b607a2e7f6c6cff9046353d45e00128821122b08c4b39ee7e7672b4a7d75e36c59e248707c24b6562ac838a714a936e2cae"
         }
     },
     "pre_install": [
