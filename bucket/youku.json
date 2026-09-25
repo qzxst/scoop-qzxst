@@ -1,5 +1,5 @@
 {
-    "version": "9.5.3.1001",
+    "version": "9.5.4.1001",
     "description": "[优酷] - 优酷视频客户端",
     "homepage": "https://www.youku.com",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://pcclient.download.youku.com/iku-win-release/youkuclient_setup_9.5.3.1001.exe#/dl.7z",
-            "hash": "7438f9afacb6188591cf9e7c3411a10a316851bac7341a4340856ab71fd6c467"
+            "url": "https://pcclient.download.youku.com/iku-win-release/youkuclient_setup_9.5.4.1001.exe#/dl.7z",
+            "hash": "9318b7c7f1203cbab696a9617a6cace35f2252a42d378f04d121d724d170e874"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Unins*\" -Force -Recurse",
