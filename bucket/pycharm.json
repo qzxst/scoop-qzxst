@@ -1,5 +1,5 @@
 {
-    "version": "2026.2.1-262.9437.214",
+    "version": "2026.2.3-262.10968.92",
     "description": "Cross-Platform IDE for Python by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
     "license": {
@@ -13,8 +13,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/python/pycharm-2026.2.1.win.zip",
-            "hash": "83378ec32fd4c4090f4544038043da157bd54a1688f071aa4791ec1a43fd72ed",
+            "url": "https://download.jetbrains.com/python/pycharm-2026.2.3.win.zip",
+            "hash": "d45f6e40c29921b78b775cc9dcbe7a8d718a92839013eba5678a459af968c690",
             "bin": [
                 [
                     "IDE\\bin\\pycharm64.exe",
@@ -29,8 +29,8 @@
             ]
         },
         "arm64": {
-            "url": "https://download.jetbrains.com/python/pycharm-2026.2.1-aarch64.win.zip",
-            "hash": "1e3642349630d8eb275cabeec3eb6ba547e1e28e8190201381775a436ab2f2b4",
+            "url": "https://download.jetbrains.com/python/pycharm-2026.2.3-aarch64.win.zip",
+            "hash": "a7000a912dbd696ae49cbf8cda13c06cd5b25056473ac92cd73f29d9da930e67",
             "bin": [
                 [
                     "IDE\\bin\\pycharm64.exe",
