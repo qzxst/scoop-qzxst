@@ -1,5 +1,5 @@
 {
-    "version": "2.0.7",
+    "version": "2.0.8",
     "description": "A highly configurable cross-platform (Windows) status bar written in Python. ",
     "homepage": "https://github.com/amnweb/yasb",
     "license": "MIT",
@@ -12,8 +12,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/amnweb/yasb/releases/download/v2.0.7/yasb-2.0.7-x64.msi",
-            "hash": "c93b3eb24fceb64b8baefe694a947fecd31a7e58f0939ba61296048124edbe8b"
+            "url": "https://github.com/amnweb/yasb/releases/download/v2.0.8/yasb-2.0.8-x64.msi",
+            "hash": "fe1197bf739117be7c29cc858a4852f0a6c9e23134f094f6630f539347051404"
         }
     },
     "shortcuts": [
