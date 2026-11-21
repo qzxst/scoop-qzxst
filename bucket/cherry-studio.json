@@ -1,16 +1,16 @@
 {
-    "version": "2.1.10",
+    "version": "2.2.3",
     "description": "支持多模型服务的 Windows/macOS GPT 客户端。",
     "homepage": "https://cherry-ai.com",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v2.1.10/Cherry-Studio-2.1.10-x64-setup.exe#dl.7z",
-            "hash": "sha512:772b533a314ca388c76f28ca3c3394c5e505987eb97dfca0ce0df308881c1955577f43ef0f3c86762b77f6de33133581dcd0c6cc6dcd3e3e41d290207ebf35e3"
+            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v2.2.3/Cherry-Studio-2.2.3-x64-setup.exe#dl.7z",
+            "hash": "sha512:628a61837ed3b245d8eeb99f5b42252030e1a8ff653e0f93db14e6aff80745096f316aa83fc41b9e3119fcd1ee7d72b4bed9704ce046f97228d4ee6a075c4fe0"
         },
         "arm64": {
-            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v2.1.10/Cherry-Studio-2.1.10-arm64-setup.exe#dl.7z ",
-            "hash": "sha512:772b533a314ca388c76f28ca3c3394c5e505987eb97dfca0ce0df308881c1955577f43ef0f3c86762b77f6de33133581dcd0c6cc6dcd3e3e41d290207ebf35e3"
+            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v2.2.3/Cherry-Studio-2.2.3-arm64-setup.exe#dl.7z ",
+            "hash": "sha512:628a61837ed3b245d8eeb99f5b42252030e1a8ff653e0f93db14e6aff80745096f316aa83fc41b9e3119fcd1ee7d72b4bed9704ce046f97228d4ee6a075c4fe0"
         }
     },
     "pre_install": [
