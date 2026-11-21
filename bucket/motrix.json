@@ -1,12 +1,12 @@
 {
-    "version": "2.4.2",
+    "version": "2.4.5",
     "description": "A full-featured download manager.",
     "homepage": "https://motrix.app",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/agalwood/Motrix/releases/download/v2.4.2/Motrix-Setup-2.4.2.exe#/dl.7z",
-            "hash": "sha512:6c81d383aba954588ad71ae7f8df545f1fd19cccf9bf9eaa2b30266cdcc9e355b9ce3acdee132228c8013027a2f2a53aae64921012256c7c3645a1a989402520",
+            "url": "https://github.com/agalwood/Motrix/releases/download/v2.4.5/Motrix-Setup-2.4.5.exe#/dl.7z",
+            "hash": "sha512:3715e411a040f516a824e58e7be5f394ed0242f87ffb93ffb40cd01b9edde8821bfda0d5c5b6ac42301dcb6dc8baf750ab54f05c0abbc3157e7c1c1696c2b986",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
